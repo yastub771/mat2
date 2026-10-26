@@ -17,29 +17,6 @@ Bunu önlemek ve videoları sorunsuz izlemek için:
 2. **Mac / Linux Kullanıcıları:**
    * Klasörde terminal açıp `python3 -m http.server 8080` yazın ve tarayıcıda `http://localhost:8080` adresine gidin.
 
-3. **Canlı Web Sitesi (Kuruluma Gerek Yok):**
-   * Dosyayı GitHub Pages veya Vercel'e yüklediğinizde (`https://...` bağlantısı olduğu için) hem siz hem arkadaşlarınız ek bir çalıştırma işlemi yapmadan doğrudan izleyebilirsiniz.
-
----
-
-## 👥 Arkadaşlarınızla Nasıl Paylaşabilirsiniz?
-
-### 1. Yöntem: Doğrudan Dosya Gönderme (En Kolay)
-* Proje klasörünü zip haline getirip (`calculus2-portal.zip`) veya sadece **`index.html`** dosyasını **WhatsApp**, **Telegram**, **Discord** ya da **Google Drive** üzerinden arkadaşlarınıza gönderebilirsiniz.
-* Karşı taraf dosyayı indirdiği anda tarayıcısında açıp izlemeye başlayabilir.
-
-### 2. Yöntem: GitHub Pages ile Ücretsiz Web Sitesi Yapma (Önerilen)
-Arkadaşlarınıza doğrudan tıklayıp girebilecekleri bir link (örneğin `https://kullaniciadi.github.io/calculus2`) vermek isterseniz:
-1. [GitHub](https://github.com)'a girin ve yeni bir repository (örneğin `calculus2`) açın.
-2. Bu klasördeki `index.html` dosyasını repository'ye yükleyin (Upload files).
-3. Repository sayfasında **Settings -> Pages** sekmesine gidin.
-4. **Branch** kısmını `main` ve `/ (root)` seçip **Save** butonuna tıklayın.
-5. 1-2 dakika içinde siteniz herkese açık canlı bir web sitesi linki haline gelecektir!
-
-### 3. Yöntem: Vercel / Netlify (Sürükle-Bırak)
-* [Vercel](https://vercel.com) veya [Netlify](https://netlify.com)'ye ücretsiz üye olun.
-* `calculus2-portal` klasörünü ekrana sürükleyip bırakın. Saniyeler içinde size özel canlı bir web sitesi adresi oluşturulacaktır.
-
 ---
 
 ## 🌟 Öne Çıkan Özellikler
