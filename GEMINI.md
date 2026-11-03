@@ -77,6 +77,11 @@ Müfredata yeni video, hafta veya ders ekleneceği zaman:
 
 ## 4. Kodlama ve Arayüz Standartları
 
-1. **Tema Değişkenleri:** Yeni bir UI bileşeni eklerken sabit renk sınıfları (`bg-slate-900`, `text-white`) yerine `css/style.css` içindeki semantik değişkenleri (`bg-[var(--card)]`, `bg-[var(--bg)]`, `text-[var(--text)]`, `text-[var(--muted)]`, `border-[var(--border)]`) kullanın. Böylece hem Aydınlık hem Karanlık modda tam uyum sağlanır.
-2. **Klavye Kısayolları Güvenliği:** `keydown` dinleyicisine yeni bir kısayol eklerken mutlaka aktif elemanın `INPUT`, `SELECT` veya `TEXTAREA` olmadığını kontrol edin (kullanıcı arama yaparken veya ders notu yazarken kısayollar tetiklenmemelidir).
-3. **Kod Doğrulama:** `js/app.js` üzerinde yapılan her değişiklikten sonra `node -c js/app.js` komutuyla sözdizimi (syntax) kontrolü yapılmalıdır.
+1. **Tema Değişkenleri:** Yeni bir UI bileşeni eklerken sabit renk sınıfları (`bg-slate-900`, `text-white`) yerine `css/style.css` içindeki semantik değişkenleri (`bg-[var(--card)]`, `bg-[var(--bg)]`, `bg-[var(--elev)]`, `text-[var(--text)]`, `text-[var(--text-strong)]`, `text-[var(--muted)]`, `border-[var(--border)]`) kullanın. Böylece hem Aydınlık hem Karanlık modda tam uyum sağlanır.
+   * **Tasarım dili:** Monokrom zinc paleti + tek vurgu rengi `var(--accent)` (amber). İndigo / mor / neon glow / radial gradyan kullanılmaz; ayrım gölge yerine 1px kenarlıkla yapılır.
+   * **Hazır bileşen sınıfları:** `.card`, `.pill`, `.btn` (`.btn-primary`, `.is-on`), `.icon-btn`, `.field`, `.seg` / `.seg-btn`, `.popover` / `.menu-item`, `.kbd`, `.switch`, `.cbx`.
+   * **Fontlar:** Arayüz `Plus Jakarta Sans` (`font-sans`), süre / numara / metrik `JetBrains Mono` (`font-mono`).
+   * Bu sınıflar `display` belirlediği için `hidden md:inline-flex` gibi duyarlı görünürlük sınıflarını doğrudan onlara değil, sarmalayıcı bir elemana verin.
+2. **Özel Oynatıcı Kontrolleri:** YouTube iframe'i `controls=0` ile yüklenir ve `pointer-events: none` ile tıklamaları `.player-overlay` alır (klavye odağı sayfada kalır). Oynat / ses / tam ekran overlay'de; scrubber ve hız menüsü video altındadır. `listening` el sıkışması ~15 sn içinde kurulamazsa `enableNativeControls()` YouTube'un kendi kontrollerine geri döner.
+3. **Klavye Kısayolları Güvenliği:** `keydown` dinleyicisine yeni bir kısayol eklerken mutlaka aktif elemanın `INPUT`, `SELECT` veya `TEXTAREA` olmadığını kontrol edin (kullanıcı arama yaparken veya ders notu yazarken kısayollar tetiklenmemelidir).
+4. **Kod Doğrulama:** `js/app.js` üzerinde yapılan her değişiklikten sonra `node -c js/app.js` komutuyla sözdizimi (syntax) kontrolü yapılmalıdır.

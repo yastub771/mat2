@@ -4,11 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Calculus 2 Öğrenim Portalı | Video & Hız Takibi</title>
-  
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📐</text></svg>">
-  
+  <title>Calculus II · Ders Portalı</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2318181b'/><text x='16' y='23' font-size='20' text-anchor='middle' fill='%23f59e0b' font-family='serif'>∫</text></svg>">
+
+  <!-- Fontlar: Plus Jakarta Sans (arayüz) + JetBrains Mono (süre / metrik) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -16,486 +20,374 @@
       darkMode: 'class',
       theme: {
         extend: {
-          colors: {
-            brand: {
-              50: '#eef2ff',
-              100: '#e0e7ff',
-              500: '#6366f1',
-              600: '#4f46e5',
-              700: '#4338ca',
-            }
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'ui-monospace', 'SFMono-Regular', 'monospace']
           }
         }
       }
     }
   </script>
 
-  <!-- Özel Stiller -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="antialiased min-h-screen flex flex-col transition-colors duration-200">
-  
-  <!-- ÜST GEZİNME ÇUBUĞU (NAVBAR) -->
-  <header class="bg-[var(--card)] border-b border-[var(--border)] sticky top-0 z-40 px-3 md:px-6 py-2.5 shadow-sm">
-    <div class="max-w-[1920px] mx-auto flex flex-wrap items-center justify-between gap-3">
-      
-      <!-- LOGO & BAŞLIK -->
-      <div class="flex items-center gap-3">
-        <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-indigo-600 to-violet-500 text-white font-black flex items-center justify-center text-xs shadow-md">
-          ∫dx
+<body class="font-sans antialiased min-h-screen flex flex-col">
+
+  <!-- ÜST BAR -->
+  <header class="sticky top-0 z-40 h-14 bg-[var(--bg)] border-b border-[var(--border)]">
+    <div class="max-w-[1920px] mx-auto h-full px-4 md:px-6 flex items-center justify-between gap-4">
+
+      <!-- Sol: Logo + Hiyerarşi -->
+      <nav class="flex items-center gap-3 min-w-0" aria-label="Konum">
+        <div class="w-7 h-7 shrink-0 rounded-md border border-[var(--border)] bg-[var(--card)] flex items-center justify-center font-serif text-[15px] text-[var(--accent)]">∫</div>
+        <ol class="flex items-center gap-1.5 min-w-0 text-sm">
+          <li class="shrink-0 font-semibold text-[var(--text-strong)]">Calculus II</li>
+          <li class="shrink-0 text-[var(--faint)]" aria-hidden="true">
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </li>
+          <li id="crumb-week" class="hidden md:block shrink-0 text-[var(--muted)]">Hafta 1</li>
+          <li class="hidden md:block shrink-0 text-[var(--faint)]" aria-hidden="true">
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </li>
+          <li id="crumb-title" class="truncate text-[var(--text)]" aria-current="page">Dizi (Sequence) Nedir?</li>
+        </ol>
+      </nav>
+
+      <!-- Sağ: Durum pill'leri + menü -->
+      <div class="flex items-center gap-2 shrink-0">
+
+        <!-- Pomodoro -->
+        <div class="hidden md:block">
+        <div id="pomo-pill" class="pill !pr-1.5">
+          <button id="pomo-btn" onclick="togglePomodoro()" title="Pomodoro başlat / duraklat (25 dk)" class="inline-flex items-center gap-1.5">
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></svg>
+            <span id="pomo-time" class="font-mono tabular-nums">25:00</span>
+          </button>
+          <button onclick="resetPomodoro(event)" title="Sayacı sıfırla" aria-label="Pomodoro sayacını sıfırla" class="w-5 h-5 rounded-full inline-flex items-center justify-center text-[var(--faint)] hover:text-[var(--text-strong)]">
+            <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+          </button>
         </div>
-        <div>
-          <div class="flex items-center gap-2">
-            <h1 class="text-sm md:text-base font-bold tracking-tight leading-tight">
-              Calculus 2 Öğrenim Portalı
-            </h1>
-            <span class="text-[10px] px-2 py-0.5 rounded-full bg-indigo-500/10 text-indigo-500 font-semibold border border-indigo-500/20 hidden sm:inline-block">
-              13 Haftalık Müfredat & Sınav Hazırlık
-            </span>
+        </div>
+
+        <!-- Müfredat ilerlemesi -->
+        <div class="pill" title="13 haftalık müfredat ilerlemesi">
+          <div class="w-12 sm:w-16 h-1 rounded-full bg-[var(--border-strong)] overflow-hidden">
+            <div id="top-progress-bar" class="h-full bg-[var(--accent)] rounded-full transition-all duration-300" style="width: 0%"></div>
           </div>
-          <p class="text-[11px] text-[var(--muted)]">BUders Matematik 2 Video Arşivi & Çalışma Takipçisi</p>
+          <span id="top-progress-text" class="font-mono tabular-nums text-[11px] text-[var(--text)]">0% · 0/394</span>
         </div>
-      </div>
 
-      <!-- İLERLEME, POMODORO & KONTROLLER -->
-      <div class="flex items-center gap-2 sm:gap-3">
-        
-        <!-- POMODORO SAYACI -->
-        <div class="hidden xl:flex items-center gap-1 bg-[var(--bg)] border border-[var(--border)] rounded-xl px-2.5 py-1 text-xs">
-          <button id="pomo-btn" onclick="togglePomodoro()" title="Pomodoro Başlat / Duraklat (25 dk)" class="flex items-center gap-1.5 font-mono font-bold text-[var(--text)] hover:text-indigo-500 transition">
-            <span>🍅</span>
-            <span id="pomo-time">25:00</span>
+        <!-- Tampermonkey 3x durumu -->
+        <div class="hidden sm:block">
+          <button id="tm-status-btn" onclick="toggleTmModal()" title="Tampermonkey 3x eklenti durumu" class="pill">
+            <span id="tm-dot" class="status-dot"></span>
+            <span id="tm-text" class="text-[11px]">3x eklentisi</span>
           </button>
-          <button onclick="resetPomodoro(event)" title="Sayacı Sıfırla" class="text-[10px] text-[var(--muted)] hover:text-rose-500 ml-1">↺</button>
         </div>
 
-        <!-- ANA MÜFREDAT İLERLEME ÇUBUĞU -->
-        <div class="flex items-center gap-2 text-xs">
-          <span class="text-[var(--muted)] hidden md:inline">Müfredat:</span>
-          <div class="w-20 sm:w-28 bg-[var(--border)] h-2 rounded-full overflow-hidden">
-            <div id="top-progress-bar" class="bg-[var(--primary)] h-full transition-all duration-300 rounded-full" style="width: 0%"></div>
+        <!-- Sinema modu -->
+        <div class="hidden lg:block">
+          <button id="theater-btn" onclick="toggleTheaterMode()" title="Geniş ekran modu (Y)" aria-pressed="false" class="pill">
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="12" x="2" y="6" rx="2"/></svg>
+            <span id="theater-text" class="text-[11px]">Geniş</span>
+          </button>
+        </div>
+
+        <!-- Taşma menüsü -->
+        <div class="relative">
+          <button onclick="toggleDropdown('app-menu', event)" data-popover-trigger="app-menu" aria-haspopup="menu" aria-expanded="false" aria-label="Diğer seçenekler" class="icon-btn">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+          </button>
+          <div id="app-menu" data-popover role="menu" class="popover hidden absolute right-0 top-full mt-2 w-56 z-50">
+            <button role="menuitem" onclick="exportData(); closeDropdowns()" class="menu-item">
+              <svg class="w-4 h-4 text-[var(--muted)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+              İlerlemeyi yedekle
+            </button>
+            <button role="menuitem" onclick="document.getElementById('import-file-input').click(); closeDropdowns()" class="menu-item">
+              <svg class="w-4 h-4 text-[var(--muted)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" x2="12" y1="3" y2="15"/></svg>
+              Yedeği içe aktar
+            </button>
+            <div class="my-1 h-px bg-[var(--border)]"></div>
+            <button role="menuitem" onclick="toggleTheme()" class="menu-item">
+              <span id="theme-icon" class="text-[var(--muted)]"></span>
+              <span id="theme-label">Aydınlık tema</span>
+            </button>
+            <button role="menuitem" onclick="toggleShortcutsModal(); closeDropdowns()" class="menu-item">
+              <svg class="w-4 h-4 text-[var(--muted)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 8h.01"/><path d="M12 12h.01"/><path d="M14 8h.01"/><path d="M16 12h.01"/><path d="M18 8h.01"/><path d="M6 8h.01"/><path d="M7 16h10"/><path d="M8 12h.01"/><rect width="20" height="16" x="2" y="4" rx="2"/></svg>
+              <span class="flex-1 text-left">Klavye kısayolları</span>
+              <kbd class="kbd">?</kbd>
+            </button>
           </div>
-          <span id="top-progress-text" class="font-bold text-xs text-[var(--text)]">0% (0/394)</span>
-        </div>
-
-        <!-- TAMPERMONKEY 3X DURUM ROZETİ -->
-        <button 
-          id="tm-status-btn" 
-          onclick="toggleTmModal()" 
-          title="Tampermonkey 3x Eklenti Durumu" 
-          class="p-1.5 px-2.5 rounded-xl border border-[var(--border)] hover:bg-[var(--border)] text-xs text-[var(--muted)] hover:text-[var(--text)] transition flex items-center gap-1.5 font-medium"
-        >
-          <span id="tm-dot" class="w-2 h-2 rounded-full bg-amber-500"></span>
-          <span id="tm-text" class="text-[11px]">3x Eklentisi</span>
-        </button>
-
-        <!-- SİNEMA MODU BUTONU -->
-        <button 
-          id="theater-btn" 
-          onclick="toggleTheaterMode()" 
-          title="Sinema / Geniş Ekran Modu (F)" 
-          class="p-1.5 px-2.5 rounded-xl border border-[var(--border)] hover:bg-[var(--border)] text-xs text-[var(--text)] transition flex items-center gap-1.5 font-medium"
-        >
-          <span id="theater-icon">⛶</span>
-          <span class="hidden sm:inline text-xs" id="theater-text">Geniş Ekran</span>
-        </button>
-
-        <!-- YEDEKLEME / İÇE AKTARMA -->
-        <div class="flex items-center gap-1 border-l border-[var(--border)] pl-2 sm:pl-3">
-          <button onclick="exportData()" title="İlerlemeyi ve Notları JSON Olarak İndir" class="p-1.5 rounded-lg border border-[var(--border)] hover:bg-[var(--border)] text-xs text-[var(--muted)] hover:text-[var(--text)] transition">
-            📥 <span class="hidden lg:inline text-[11px]">Yedekle</span>
-          </button>
-          <button onclick="document.getElementById('import-file-input').click()" title="Yedeği İçe Aktar" class="p-1.5 rounded-lg border border-[var(--border)] hover:bg-[var(--border)] text-xs text-[var(--muted)] hover:text-[var(--text)] transition">
-            📤 <span class="hidden lg:inline text-[11px]">Yükle</span>
-          </button>
           <input type="file" id="import-file-input" class="hidden" accept=".json" onchange="importData(event)" />
         </div>
-
-        <!-- TEMA DEĞİŞTİRİCİ -->
-        <button 
-          id="theme-toggle" 
-          onclick="toggleTheme()" 
-          title="Karanlık / Aydınlık Tema"
-          class="p-1.5 px-2 rounded-xl border border-[var(--border)] hover:bg-[var(--border)] text-[var(--text)] transition flex items-center justify-center text-xs"
-        >
-          <span id="theme-icon">☀️</span>
-        </button>
-
-        <!-- KISAYOLLAR BUTONU -->
-        <button onclick="toggleShortcutsModal()" title="Klavye Kısayolları (?)" class="p-1.5 px-2 rounded-lg border border-[var(--border)] hover:bg-[var(--border)] text-xs text-[var(--muted)] hover:text-[var(--text)] flex items-center gap-1">
-          <kbd class="px-1 text-[10px] bg-[var(--border)] rounded font-mono">?</kbd>
-        </button>
-
       </div>
     </div>
   </header>
 
-  <!-- ANA İÇERİK ALANI: 2 SÜTUN (VİDEO OYNATICI + OYNATMA LİSTESİ) -->
-  <main id="main-grid" class="max-w-[1920px] mx-auto w-full p-2 sm:p-4 md:p-6 flex-1 grid grid-cols-1 lg:grid-cols-12 gap-4 md:gap-6 items-start">
-    
-    <!-- SOL SÜTUN: VİDEO OYNATICI, KONTROLLER & NOTLAR -->
-    <div id="video-col" class="lg:col-span-8 xl:col-span-9 space-y-3 md:space-y-4 transition-all duration-300">
-      
-      <!-- FILE PROTOKOLÜ (HATA 153) UYARI ÇUBUĞU -->
-      <div id="file-protocol-warning" class="hidden bg-amber-500/10 border border-amber-500/30 rounded-2xl p-3 md:p-4 text-xs space-y-2">
-        <div class="flex items-start gap-2.5">
-          <span class="text-lg leading-none">⚠️</span>
-          <div class="flex-1 space-y-1">
-            <h4 class="font-bold text-amber-500 text-xs">YouTube Hata 153 Çözümü (file:// Protokolü Uyarısı)</h4>
-            <p class="text-[var(--text)] opacity-90 leading-relaxed">
-              Dosyayı doğrudan çift tıklayarak açtığınız için tarayıcınız YouTube'a güvenlik bilgisi (Referrer) gönderemiyor ve YouTube videoyu engelliyor.
-            </p>
-            <div class="pt-1 flex flex-wrap items-center gap-2">
-              <span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-600 dark:text-amber-400 font-semibold font-mono">Çözüm:</span>
-              <span>Klasördeki <strong>Baslat.bat</strong> dosyasına çift tıklayarak localhost üzerinden açın.</span>
-              <a id="direct-yt-link" href="https://youtu.be/z7UBx7_QIVU" target="_blank" rel="noopener noreferrer" class="ml-auto inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-[var(--primary)] text-[var(--primary-fg)] font-medium hover:opacity-90 transition">
-                <span>YouTube'da Aç</span> ↗
-              </a>
-            </div>
-          </div>
+  <!-- ANA İÇERİK -->
+  <main id="main-grid" class="max-w-[1920px] mx-auto w-full p-3 sm:p-4 md:p-6 flex-1 grid grid-cols-1 lg:grid-cols-12 gap-4 md:gap-6 items-start">
+
+    <!-- SOL SÜTUN -->
+    <div id="video-col" class="lg:col-span-8 xl:col-span-9 space-y-4 min-w-0">
+
+      <!-- file:// (Hata 153) uyarısı -->
+      <div id="file-protocol-warning" class="hidden card p-4 flex items-start gap-3">
+        <svg class="w-4 h-4 mt-0.5 shrink-0 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+        <div class="flex-1 min-w-0 space-y-1">
+          <p class="text-sm font-medium text-[var(--text-strong)]">Videolar dosyadan açıldığı için oynatılamıyor (YouTube Hata 153)</p>
+          <p class="text-sm text-[var(--muted)]">Sayfayı <span class="font-mono text-[var(--text)]">Baslat.bat</span> ile ya da yerel bir sunucu üzerinden (<span class="font-mono text-[var(--text)]">localhost</span>) açın.</p>
         </div>
+        <a id="direct-yt-link" href="https://youtu.be/z7UBx7_QIVU" target="_blank" rel="noopener noreferrer" class="btn shrink-0">
+          YouTube'da aç
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3"/></svg>
+        </a>
       </div>
 
-      <!-- VİDEO OYNATICI KARTI -->
-      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl md:rounded-3xl overflow-hidden shadow-xl">
-        
-        <!-- 16:9 YOUTUBE IFRAME -->
-        <div class="aspect-video-container bg-black shadow-inner">
-          <iframe 
-            id="yt-player" 
-            src="https://www.youtube-nocookie.com/embed/z7UBx7_QIVU?enablejsapi=1&autoplay=0&rel=0&modestbranding=1" 
-            title="Calculus 2 Video Oynatıcı" 
+      <!-- OYNATICI KARTI -->
+      <section class="card" aria-label="Video oynatıcı">
+
+        <!-- Video + hover overlay -->
+        <div id="player-shell" class="player-shell is-paused">
+          <iframe
+            id="yt-player"
+            src="https://www.youtube-nocookie.com/embed/z7UBx7_QIVU?enablejsapi=1&autoplay=0&rel=0&modestbranding=1&controls=0"
+            title="Calculus II video oynatıcı"
             referrerpolicy="strict-origin-when-cross-origin"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
-            class="border-0"
+            tabindex="-1"
           ></iframe>
+
+          <div class="player-overlay">
+            <div id="player-surface" class="absolute inset-0"></div>
+
+            <div class="overlay-center" aria-hidden="true">
+              <svg class="w-6 h-6 ml-0.5" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+            </div>
+
+            <div class="player-scrim"></div>
+            <div class="player-bar">
+              <button id="ov-play" onclick="togglePlayPause()" class="ov-btn" aria-label="Oynat" title="Oynat / Durdur (Boşluk)"></button>
+              <button onclick="seekRelative(-10)" class="ov-btn" aria-label="10 saniye geri" title="10 sn geri (←)">
+                <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+              </button>
+              <button onclick="seekRelative(10)" class="ov-btn" aria-label="10 saniye ileri" title="10 sn ileri (→)">
+                <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/></svg>
+              </button>
+              <div class="volume-wrap flex items-center">
+                <button id="ov-mute" onclick="toggleMute()" class="ov-btn" aria-label="Sesi kapat" title="Ses"></button>
+                <input id="ov-volume" type="range" min="0" max="100" step="1" value="100" class="volume-range" aria-label="Ses düzeyi" oninput="setPlayerVolume(parseInt(this.value, 10))" />
+              </div>
+              <span id="ov-time" class="ml-1 font-mono text-[11px] tabular-nums text-white/80 hidden sm:inline">0:00 / 0:00</span>
+              <div class="flex-1"></div>
+              <div class="hidden lg:block">
+                <button onclick="toggleTheaterMode()" class="ov-btn" aria-label="Geniş ekran" title="Geniş ekran (Y)">
+                  <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="12" x="2" y="6" rx="2"/></svg>
+                </button>
+              </div>
+              <button id="ov-fs" onclick="toggleFullscreen()" class="ov-btn" aria-label="Tam ekran" title="Tam ekran (F)"></button>
+            </div>
+          </div>
         </div>
 
-        <!-- KONTROL & HIZLANDIRMA PANELİ -->
-        <div class="p-3 md:p-5 bg-[var(--card)] border-t border-[var(--border)] space-y-3">
-          
-          <!-- SATIR 1: OYNAT/DURDUR, İLERİ/GERİ SARMA & AKTİF HIZ ROZETİ -->
-          <div class="flex flex-wrap items-center justify-between gap-2.5">
-            <div class="flex flex-wrap items-center gap-2">
-              <button 
-                onclick="sendYtCommand('playVideo')" 
-                class="px-3.5 py-1.5 rounded-xl bg-[var(--primary)] text-[var(--primary-fg)] text-xs font-semibold hover:opacity-90 flex items-center gap-1.5 transition shadow-sm"
-              >
-                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M6.3 2.84A1.5 1.5 0 004 4.11v11.78a1.5 1.5 0 002.3 1.27l9.344-5.891a1.5 1.5 0 000-2.538L6.3 2.841z"></path></svg>
-                <span>Oynat</span>
-              </button>
-
-              <button 
-                onclick="sendYtCommand('pauseVideo')" 
-                class="px-3 py-1.5 rounded-xl border border-[var(--border)] hover:bg-[var(--border)] text-xs font-semibold text-[var(--text)] flex items-center gap-1.5 transition"
-              >
-                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
-                <span>Durdur</span>
-              </button>
-
-              <button 
-                onclick="seekRelative(-10)" 
-                title="10 Saniye Geri Sar (Sol Ok)" 
-                class="px-2.5 py-1.5 rounded-xl border border-[var(--border)] hover:bg-[var(--border)] text-xs text-[var(--muted)] hover:text-[var(--text)] transition"
-              >
-                <span>↺ -10s</span>
-              </button>
-
-              <button 
-                onclick="seekRelative(10)" 
-                title="10 Saniye İleri Sar (Sağ Ok)" 
-                class="px-2.5 py-1.5 rounded-xl border border-[var(--border)] hover:bg-[var(--border)] text-xs text-[var(--muted)] hover:text-[var(--text)] transition"
-              >
-                <span>+10s ↻</span>
-              </button>
-
-              <button 
-                onclick="toggleTheaterMode()" 
-                class="px-2.5 py-1.5 rounded-xl border border-[var(--border)] hover:bg-[var(--border)] text-xs text-[var(--muted)] hover:text-[var(--text)] transition flex items-center gap-1"
-                title="Geniş Ekran Modu (F)"
-              >
-                <span>⛶ Genişlet</span>
-              </button>
+        <!-- Scrubber + hız menüsü -->
+        <div class="flex items-center gap-3 px-4 py-2.5 border-t border-[var(--border)]">
+          <span id="time-current" class="font-mono text-xs tabular-nums text-[var(--muted)] w-10 text-right">0:00</span>
+          <div id="scrubber" class="scrubber flex-1" role="slider" aria-label="Video konumu" aria-valuemin="0" aria-valuemax="0" aria-valuenow="0">
+            <div class="scrubber-track">
+              <div id="scrubber-buffer" class="scrubber-buffer"></div>
+              <div id="scrubber-fill" class="scrubber-fill"></div>
+              <div id="scrubber-knob" class="scrubber-knob"></div>
             </div>
-
-            <!-- AKTİF HIZ ROZETİ -->
-            <div class="flex items-center gap-2">
-              <span class="text-xs text-[var(--muted)]">Hız:</span>
-              <span id="current-speed-badge" class="px-2.5 py-1 rounded-lg bg-[var(--primary)] text-[var(--primary-fg)] text-xs font-bold tracking-wide shadow-sm">
-                1.0x
-              </span>
-            </div>
+            <div id="scrubber-tip" class="scrubber-tip">0:00</div>
           </div>
+          <span id="time-duration" class="font-mono text-xs tabular-nums text-[var(--muted)] w-10">0:00</span>
 
-          <!-- SATIR 2: HIZLANDIRMA BUTONLARI (0.75x - 3.0x) -->
-          <div class="pt-2 border-t border-[var(--border)] flex flex-wrap items-center justify-between gap-2">
-            <div class="flex items-center gap-1.5 text-xs text-[var(--muted)] font-medium">
-              <span>Hızlandırma:</span>
-            </div>
-
-            <div class="flex flex-wrap items-center gap-1.5" id="speed-buttons-container">
-              <button onclick="setSpeed(0.75)" data-speed="0.75" class="speed-btn px-2.5 py-1 rounded-lg text-xs font-medium border border-[var(--border)] hover:bg-[var(--border)] text-[var(--text)] transition">0.75x</button>
-              <button onclick="setSpeed(1.0)" data-speed="1.0" class="speed-btn px-2.5 py-1 rounded-lg text-xs font-bold border border-[var(--primary)] bg-[var(--primary)] text-[var(--primary-fg)] transition shadow-sm">1x</button>
-              <button onclick="setSpeed(1.25)" data-speed="1.25" class="speed-btn px-2.5 py-1 rounded-lg text-xs font-medium border border-[var(--border)] hover:bg-[var(--border)] text-[var(--text)] transition">1.25x</button>
-              <button onclick="setSpeed(1.5)" data-speed="1.5" class="speed-btn px-2.5 py-1 rounded-lg text-xs font-medium border border-[var(--border)] hover:bg-[var(--border)] text-[var(--text)] transition">1.5x</button>
-              <button onclick="setSpeed(1.75)" data-speed="1.75" class="speed-btn px-2.5 py-1 rounded-lg text-xs font-medium border border-[var(--border)] hover:bg-[var(--border)] text-[var(--text)] transition">1.75x</button>
-              <button onclick="setSpeed(2.0)" data-speed="2.0" class="speed-btn px-2.5 py-1 rounded-lg text-xs font-medium border border-[var(--border)] hover:bg-[var(--border)] text-[var(--text)] transition">2x (Resmi)</button>
-              <button onclick="handleExtendedSpeed(2.5)" data-speed="2.5" class="speed-btn px-2.5 py-1 rounded-lg text-xs font-medium border border-amber-500/30 hover:bg-amber-500/20 text-amber-500 transition">2.5x</button>
-              <button onclick="handleExtendedSpeed(3.0)" data-speed="3.0" class="speed-btn px-2.5 py-1 rounded-lg text-xs font-bold border border-amber-500/40 hover:bg-amber-500/20 text-amber-500 transition">3x ⚡</button>
-            </div>
-
-            <!-- HASSAS SLIDER -->
-            <div class="flex items-center gap-1.5 ml-auto">
-              <button onclick="adjustSpeed(-0.25)" title="Hızı Azalt (<)" class="w-6 h-6 rounded-md border border-[var(--border)] hover:bg-[var(--border)] text-xs font-bold flex items-center justify-center">-</button>
-              <input 
-                type="range" 
-                id="speed-slider" 
-                min="0.5" 
-                max="3.0" 
-                step="0.1" 
-                value="1.0" 
-                oninput="handleSliderChange(parseFloat(this.value))"
-                class="w-20 md:w-24 accent-[var(--primary)] cursor-pointer"
-              />
-              <button onclick="adjustSpeed(0.25)" title="Hızı Artır (>)" class="w-6 h-6 rounded-md border border-[var(--border)] hover:bg-[var(--border)] text-xs font-bold flex items-center justify-center">+</button>
-            </div>
-          </div>
-
-          <!-- QWERTY HIZ KISAYOLLARI BİLGİ ÇUBUĞU -->
-          <div id="speed-explanation" class="text-[11px] text-[var(--muted)] flex flex-wrap items-center justify-between gap-2 bg-[var(--bg)] px-3 py-2 rounded-xl border border-[var(--border)]">
-            <div class="flex items-center gap-1.5 flex-wrap">
-              <span>⌨️</span>
-              <span class="font-semibold text-[var(--text)]">QWERTY Hız Kısayolları:</span>
-              <span class="flex items-center gap-1 font-mono text-[10px]">
-                <kbd class="px-1.5 py-0.5 rounded bg-[var(--card)] border border-[var(--border)] text-[var(--text)] font-bold">Q</kbd> 1x
-                <span class="text-[var(--border)]">•</span>
-                <kbd class="px-1.5 py-0.5 rounded bg-[var(--card)] border border-[var(--border)] text-[var(--text)] font-bold">W</kbd> 1.25x
-                <span class="text-[var(--border)]">•</span>
-                <kbd class="px-1.5 py-0.5 rounded bg-[var(--card)] border border-[var(--border)] text-[var(--text)] font-bold">E</kbd> 1.5x
-                <span class="text-[var(--border)]">•</span>
-                <kbd class="px-1.5 py-0.5 rounded bg-[var(--card)] border border-[var(--border)] text-[var(--text)] font-bold">R</kbd> 2x
-                <span class="text-[var(--border)]">•</span>
-                <kbd class="px-1.5 py-0.5 rounded bg-amber-500/20 border border-amber-500/40 text-amber-500 font-bold">T</kbd> 3x ⚡
-              </span>
-            </div>
-            <button onclick="toggleShortcutsModal()" class="text-indigo-500 hover:underline font-medium text-[11px]">
-              Tüm Kısayollar (?)
+          <div class="relative">
+            <button onclick="toggleDropdown('speed-popover', event)" data-popover-trigger="speed-popover" aria-haspopup="menu" aria-expanded="false" class="pill !h-7" title="Oynatma hızı">
+              <span class="text-[var(--muted)]">Hız</span>
+              <span id="current-speed-badge" class="font-mono tabular-nums text-[var(--text-strong)]">1x</span>
+              <svg class="w-3 h-3 text-[var(--muted)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
             </button>
-          </div>
 
+            <div id="speed-popover" data-popover role="menu" class="popover hidden absolute right-0 bottom-full mb-2 w-52 z-30">
+              <p class="px-2.5 pt-1.5 pb-1 text-[11px] font-medium text-[var(--muted)]">Oynatma hızı</p>
+              <div id="speed-buttons-container">
+                <button onclick="selectSpeed(0.75)" data-speed="0.75" class="speed-opt"><span>0.75x</span><span class="opt-check">✓</span></button>
+                <button onclick="selectSpeed(1.0)"  data-speed="1.0"  class="speed-opt"><span>1x <span class="opt-hint">Normal</span></span><span class="opt-check">✓</span></button>
+                <button onclick="selectSpeed(1.25)" data-speed="1.25" class="speed-opt"><span>1.25x</span><span class="opt-check">✓</span></button>
+                <button onclick="selectSpeed(1.5)"  data-speed="1.5"  class="speed-opt"><span>1.5x</span><span class="opt-check">✓</span></button>
+                <button onclick="selectSpeed(1.75)" data-speed="1.75" class="speed-opt"><span>1.75x</span><span class="opt-check">✓</span></button>
+                <button onclick="selectSpeed(2.0)"  data-speed="2.0"  class="speed-opt"><span>2x</span><span class="opt-check">✓</span></button>
+                <div class="my-1 h-px bg-[var(--border)]"></div>
+                <button onclick="selectSpeed(2.5)"  data-speed="2.5"  class="speed-opt"><span>2.5x <span class="opt-hint">Eklenti</span></span><span class="opt-check">✓</span></button>
+                <button onclick="selectSpeed(3.0)"  data-speed="3.0"  class="speed-opt"><span>3x <span class="opt-hint">Eklenti</span></span><span class="opt-check">✓</span></button>
+              </div>
+              <div class="mt-1 pt-1.5 border-t border-[var(--border)] flex items-center justify-between px-1.5 pb-0.5">
+                <button onclick="adjustSpeed(-0.25)" class="icon-btn !w-6 !h-6" aria-label="Hızı azalt" title="Azalt (<)">−</button>
+                <span id="speed-step-value" class="font-mono text-xs tabular-nums text-[var(--text)]">1x</span>
+                <button onclick="adjustSpeed(0.25)" class="icon-btn !w-6 !h-6" aria-label="Hızı artır" title="Artır (>)">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DERS DETAYI -->
+      <section class="card p-4 md:p-5 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div class="min-w-0 space-y-1.5">
+          <div class="flex items-center gap-2 text-xs">
+            <span id="current-week-badge" class="pill !h-6 !px-2 text-[11px] font-medium">Hafta 1</span>
+            <span id="current-scope-badge" class="font-mono text-[var(--muted)]">9.1</span>
+            <span class="text-[var(--faint)]">·</span>
+            <span id="current-no-badge" class="font-mono text-[var(--muted)]">1.1</span>
+          </div>
+          <h1 id="current-video-title" class="text-lg font-semibold tracking-tight text-[var(--text-strong)] leading-snug">Dizi (Sequence) Nedir?</h1>
+          <p id="current-week-title" class="text-sm text-[var(--muted)]">Infinite Sequences (Sonsuz Diziler)</p>
         </div>
 
-      </div>
-
-      <!-- MEVCUT VİDEO DETAYLARI & İŞLEM BUTONLARI -->
-      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-4 md:p-5 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <div class="space-y-1 min-w-0">
-          <div class="flex items-center gap-2">
-            <span id="current-week-badge" class="px-2.5 py-0.5 rounded-md text-xs font-bold bg-[var(--primary)] text-[var(--primary-fg)]">Hafta 1</span>
-            <span id="current-scope-badge" class="font-mono text-xs text-[var(--muted)]">9.1</span>
-            <span id="current-no-badge" class="text-xs font-bold text-indigo-500">1.1</span>
-          </div>
-          <h2 id="current-video-title" class="text-base md:text-lg font-bold text-[var(--text)] truncate">Dizi (Sequence) Nedir?</h2>
-          <p id="current-week-title" class="text-xs text-[var(--muted)]">Infinite Sequences (Sonsuz Diziler)</p>
-        </div>
-
-        <!-- İZLENDİ İŞARETLE & ÖNCEKİ / SONRAKİ -->
         <div class="flex flex-wrap items-center gap-2 shrink-0">
-          <button 
-            id="mark-watched-btn" 
-            onclick="toggleCurrentVideoWatched()" 
-            class="px-3.5 py-2 rounded-xl text-xs font-semibold border border-[var(--border)] hover:bg-[var(--border)] transition flex items-center gap-2"
-          >
-            <span id="mark-watched-icon">⬜</span>
-            <span id="mark-watched-text">İzlendi Olarak İşaretle</span>
+          <button id="mark-watched-btn" onclick="toggleCurrentVideoWatched()" class="btn" title="İzlendi işaretle (M)">
+            <span id="mark-watched-icon" class="inline-flex"></span>
+            <span id="mark-watched-text">İzlendi olarak işaretle</span>
           </button>
-
           <div class="flex items-center gap-1.5">
-            <button 
-              id="prev-video-btn" 
-              onclick="playPrevVideo()" 
-              class="px-3 py-2 rounded-xl border border-[var(--border)] hover:bg-[var(--border)] text-xs font-medium flex items-center gap-1 transition"
-              title="Önceki Video (P)"
-            >
-              <span>◀ Önceki</span>
+            <button id="prev-video-btn" onclick="playPrevVideo()" class="btn" title="Önceki video (P)">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+              Önceki
             </button>
-            <button 
-              id="next-video-btn" 
-              onclick="playNextVideo()" 
-              class="px-3 py-2 rounded-xl bg-[var(--primary)] text-[var(--primary-fg)] text-xs font-bold hover:opacity-90 flex items-center gap-1 transition shadow-sm"
-              title="Sonraki Video (N)"
-            >
-              <span>Sonraki ▶</span>
+            <button id="next-video-btn" onclick="playNextVideo()" class="btn btn-primary" title="Sonraki video (N)">
+              Sonraki
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
             </button>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- KİŞİSEL VİDEO DERS NOTLARI KARTI -->
-      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-4 shadow-sm space-y-2">
+      <!-- DERS NOTLARI -->
+      <section class="card p-4 space-y-2.5">
         <div class="flex items-center justify-between">
-          <label for="video-note-input" class="text-xs font-bold text-[var(--text)] flex items-center gap-1.5">
-            <span>📝</span>
-            <span>Bu Video İçin Ders Notlarım</span>
-          </label>
-          <span id="note-save-status" class="text-[11px] text-[var(--muted)]">Otomatik kaydedilir</span>
+          <label for="video-note-input" class="text-sm font-medium text-[var(--text-strong)]">Notlar</label>
+          <span id="note-save-status" class="text-xs text-[var(--muted)]">Otomatik kaydedilir</span>
         </div>
-        <textarea 
-          id="video-note-input" 
-          rows="2" 
+        <textarea
+          id="video-note-input"
+          rows="3"
           oninput="handleNoteInput(this.value)"
-          placeholder="Önemli formülleri, soru tiplerini veya dakikaları (örn. 04:15 önemli teorem) buraya not alabilirsiniz..."
-          class="w-full bg-[var(--bg)] border border-[var(--border)] rounded-xl p-2.5 text-xs text-[var(--text)] focus:outline-none focus:ring-1 focus:ring-[var(--primary)] resize-y"
+          placeholder="Formüller, soru tipleri veya önemli dakikalar (ör. 04:15 teorem)…"
+          class="field !h-auto py-2.5 resize-y leading-relaxed"
         ></textarea>
-      </div>
-
+      </section>
     </div>
 
-    <!-- SAĞ SÜTUN: MÜFREDAT & OYNATMA LİSTESİ -->
-    <div id="playlist-col" class="lg:col-span-4 xl:col-span-3 bg-[var(--card)] border border-[var(--border)] rounded-2xl flex flex-col h-[calc(100vh-85px)] sticky top-16 shadow-sm overflow-hidden transition-all duration-300">
-      
-      <!-- OYNATMA LİSTESİ ÜST BÖLÜMÜ -->
-      <div class="p-3.5 border-b border-[var(--border)] space-y-2.5 bg-[var(--card)] shrink-0">
-        <div class="flex items-center justify-between">
-          <h3 class="text-xs font-bold uppercase tracking-wider text-[var(--muted)]">Müfredat & Oynatma Listesi</h3>
-          <span id="playlist-count-badge" class="text-xs font-bold text-indigo-500 font-mono">0 / 486</span>
+    <!-- SAĞ SÜTUN: MÜFREDAT -->
+    <aside id="playlist-col" class="lg:col-span-4 xl:col-span-3 card flex flex-col h-[70vh] lg:h-[calc(100vh-88px)] lg:sticky lg:top-[72px] overflow-hidden">
+
+      <div class="p-3 space-y-2.5 border-b border-[var(--border)] shrink-0">
+        <div class="flex items-center justify-between px-0.5">
+          <h2 class="text-sm font-semibold text-[var(--text-strong)]">Müfredat</h2>
+          <span id="playlist-count-badge" class="font-mono text-xs tabular-nums text-[var(--muted)]">0/486</span>
         </div>
 
-        <!-- HAFTA / BÖLÜM SEÇİCİ -->
-        <div class="flex items-center gap-2">
-          <select 
-            id="week-select" 
-            onchange="handleWeekSelect(this.value)" 
-            class="w-full bg-[var(--bg)] border border-[var(--border)] text-xs font-medium rounded-xl px-3 py-2 text-[var(--text)] focus:outline-none focus:ring-1 focus:ring-[var(--primary)]"
-          >
-            <!-- js/app.js tarafından doldurulur -->
-          </select>
-        </div>
-
-        <!-- CANLI ARAMA KUTUSU -->
         <div class="relative">
-          <input 
-            type="text" 
-            id="search-input" 
-            placeholder="Video, konu veya aldığınız notlarda ara..." 
-            oninput="handleSearch(this.value)"
-            class="w-full bg-[var(--bg)] border border-[var(--border)] text-xs rounded-xl pl-8 pr-3 py-2 text-[var(--text)] focus:outline-none focus:ring-1 focus:ring-[var(--primary)]"
-          />
-          <svg class="w-3.5 h-3.5 absolute left-3 top-2.5 text-[var(--muted)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+          <svg class="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-[var(--muted)] pointer-events-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" id="search-input" placeholder="Ders veya notlarda ara" oninput="handleSearch(this.value)" class="field !pl-9" />
         </div>
 
-        <!-- DURUM FİLTRELERİ -->
-        <div class="flex flex-wrap items-center justify-between gap-1 text-xs pt-1">
-          <div class="flex flex-wrap gap-1" id="filter-buttons">
-            <button onclick="setFilter('all')" id="filter-all" class="px-2 py-1 rounded-lg text-[11px] font-semibold bg-[var(--primary)] text-[var(--primary-fg)]">Tümü</button>
-            <button onclick="setFilter('unwatched')" id="filter-unwatched" class="px-2 py-1 rounded-lg text-[11px] border border-[var(--border)] hover:bg-[var(--border)] text-[var(--text)]">Kalanlar</button>
-            <button onclick="setFilter('watched')" id="filter-watched" class="px-2 py-1 rounded-lg text-[11px] border border-[var(--border)] hover:bg-[var(--border)] text-[var(--text)]">İzlenenler</button>
-            <button onclick="setFilter('noted')" id="filter-noted" class="px-2 py-1 rounded-lg text-[11px] border border-[var(--border)] hover:bg-[var(--border)] text-[var(--text)]">📝 Notlular</button>
+        <select id="week-select" onchange="handleWeekSelect(this.value)" class="field field-select" aria-label="Hafta / bölüm seç">
+          <!-- js/app.js tarafından doldurulur -->
+        </select>
+
+        <div class="flex items-center gap-2">
+          <div class="seg flex-1" id="filter-buttons" role="tablist">
+            <button onclick="setFilter('all')" id="filter-all" class="seg-btn is-active">Tümü</button>
+            <button onclick="setFilter('unwatched')" id="filter-unwatched" class="seg-btn">Kalan</button>
+            <button onclick="setFilter('watched')" id="filter-watched" class="seg-btn">İzlenen</button>
+            <button onclick="setFilter('noted')" id="filter-noted" class="seg-btn">Notlu</button>
           </div>
-          <button onclick="toggleWeekWatched()" class="text-[11px] text-indigo-500 hover:underline font-medium">Bölümü İşaretle</button>
+        </div>
+        <div class="flex justify-end px-0.5">
+          <button id="mark-week-btn" onclick="toggleWeekWatched()" class="text-xs text-[var(--muted)] hover:text-[var(--text-strong)] transition-colors">Bölümü işaretle</button>
         </div>
       </div>
 
-      <!-- KAYDIRILABİLİR VİDEO LİSTESİ -->
-      <div id="playlist-container" class="flex-1 overflow-y-auto divide-y divide-[var(--border)] p-1">
+      <div id="playlist-container" class="flex-1 overflow-y-auto py-1">
         <!-- js/app.js tarafından doldurulur -->
       </div>
 
-      <!-- OYNATMA LİSTESİ ALT BİLGİ ÇUBUĞU -->
-      <div class="p-2.5 border-t border-[var(--border)] bg-[var(--card)] flex items-center justify-between text-[11px] text-[var(--muted)] shrink-0">
-        <button id="autonext-btn" onclick="toggleAutoNext()" class="text-[11px] px-2 py-0.5 rounded-md bg-emerald-500/15 text-emerald-500 border border-emerald-500/30 font-semibold transition">
-          Otomatik Geçiş: Açık
+      <div class="px-3 py-2.5 border-t border-[var(--border)] flex items-center justify-between shrink-0">
+        <button id="autonext-btn" onclick="toggleAutoNext()" role="switch" aria-checked="true" class="switch">
+          <span class="switch-track"><span class="switch-knob"></span></span>
+          Otomatik geçiş
         </button>
-        <button onclick="resetAllProgress()" class="text-rose-500 hover:underline">İlerlemeyi Sıfırla</button>
+        <button onclick="resetAllProgress()" class="text-xs text-[var(--muted)] hover:text-[var(--danger)] transition-colors">İlerlemeyi sıfırla</button>
       </div>
-
-    </div>
-
+    </aside>
   </main>
 
-  <!-- TAMPERMONKEY 3X KURULUM REHBERİ MODALI -->
-  <div id="tm-modal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-xs hidden flex items-center justify-center p-4">
-    <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl max-w-lg w-full p-5 md:p-6 space-y-4 shadow-2xl transition">
-      
-      <div class="flex items-start justify-between border-b border-[var(--border)] pb-3">
-        <div class="flex items-center gap-2.5">
-          <div class="w-9 h-9 rounded-xl bg-amber-500/15 text-amber-500 flex items-center justify-center text-lg font-bold">
-            ⚡
-          </div>
-          <div>
-            <h3 class="text-sm md:text-base font-bold text-[var(--text)]">2.5x & 3x Hızlandırma İçin Eklenti Gerekir</h3>
-            <p class="text-[11px] text-[var(--muted)]">YouTube resmi oynatıcı sınırlaması ve çözümü</p>
-          </div>
+  <!-- TAMPERMONKEY 3X MODALI -->
+  <div id="tm-modal" class="modal hidden" onclick="if (event.target === this) toggleTmModal()">
+    <div class="modal-panel max-w-md" role="dialog" aria-modal="true" aria-labelledby="tm-modal-title">
+      <div class="flex items-start justify-between gap-4">
+        <div>
+          <h3 id="tm-modal-title" class="text-base font-semibold text-[var(--text-strong)]">2.5x ve 3x için eklenti gerekiyor</h3>
+          <p class="mt-1 text-sm text-[var(--muted)]">YouTube oynatıcısı en fazla 2x hıza izin veriyor.</p>
         </div>
-        <button onclick="toggleTmModal()" class="text-[var(--muted)] hover:text-[var(--text)] p-1 text-base">✕</button>
-      </div>
-
-      <div class="space-y-3.5 text-xs leading-relaxed text-[var(--text)]">
-        <div class="p-3 bg-rose-500/10 border border-rose-500/20 rounded-xl space-y-1">
-          <p class="font-bold text-rose-500 text-xs">❓ Neden 2.0x'in Üzeri Doğrudan Çalışmıyor?</p>
-          <p class="text-[var(--muted)] text-[11px] leading-relaxed">
-            YouTube'un resmi oynatıcı API'si maksimum <strong>2.0x</strong> hıza kadar izin verir. Tarayıcıların güvenlik duvarı (<strong>Same-Origin / CORS</strong>) ise harici sitelerin YouTube'un içindeki video etiketine dışarıdan müdahale etmesini engeller. Bu yüzden siteler kendi başına 3x yapamaz.
-          </p>
-        </div>
-
-        <div class="p-3 bg-[var(--bg)] border border-[var(--border)] rounded-xl space-y-2">
-          <p class="font-bold text-indigo-500 text-xs">🛠️ Çözüm: Tampermonkey ile 1 Dakikada 3x'i Açın</p>
-          <p class="text-[var(--muted)] text-[11px]">
-            Hazırladığımız hafif eklenti scripti YouTube oynatıcısının içine yerleşerek tarayıcı sınırını aşar. Sitedeki 3x butonuna (veya <kbd class="px-1 py-0.5 bg-[var(--card)] border border-[var(--border)] rounded font-mono">T</kbd> tuşuna) bastığınız anda video doğrudan 3 kat hızlanır:
-          </p>
-          
-          <div class="space-y-2 pt-1">
-            <div class="flex items-start gap-2 text-[11px]">
-              <span class="w-5 h-5 rounded-full bg-indigo-600 text-white font-bold flex items-center justify-center shrink-0 text-[10px]">1</span>
-              <span>Tarayıcınıza resmi <a href="https://www.tampermonkey.net/" target="_blank" rel="noopener noreferrer" class="text-indigo-500 underline font-semibold">Tampermonkey Eklentisini</a> kurun (Chrome, Edge, Brave, Firefox destekler).</span>
-            </div>
-            <div class="flex items-start gap-2 text-[11px]">
-              <span class="w-5 h-5 rounded-full bg-indigo-600 text-white font-bold flex items-center justify-center shrink-0 text-[10px]">2</span>
-              <span>Aşağıdaki butona tıklayıp açılan Tampermonkey sekmesinde <strong>"Kur (Install)"</strong> butonuna basın.</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="p-2.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 text-[11px] flex items-center gap-2">
-          <span>✅</span>
-          <span>Kurulumdan sonra sayfayı yenileyin; üst bardaki rozet yeşile dönecek ve 3x doğrudan çalışacaktır!</span>
-        </div>
-      </div>
-
-      <div class="flex flex-wrap gap-2 pt-1 border-t border-[var(--border)]">
-        <a href="calculus2_hizlandirici.user.js" target="_blank" class="flex-1 py-2.5 bg-indigo-600 text-white text-center rounded-xl text-xs font-bold hover:bg-indigo-700 transition flex items-center justify-center gap-1.5 shadow-sm">
-          <span>🚀 1-Tıkla Scripti Yükle (.user.js)</span>
-        </a>
-        <button onclick="toggleTmModal()" class="px-4 py-2.5 border border-[var(--border)] rounded-xl text-xs font-semibold hover:bg-[var(--border)] transition">
-          Kapat
+        <button onclick="toggleTmModal()" class="icon-btn shrink-0" aria-label="Kapat">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
         </button>
       </div>
 
+      <p class="text-sm leading-relaxed text-[var(--text)]">
+        Tarayıcı güvenliği, bir sitenin gömülü YouTube videosunun içindeki oynatıcıya doğrudan erişmesini engeller. Küçük bir Tampermonkey betiği bu sınırı oynatıcının içinden aşar.
+      </p>
+
+      <ol class="space-y-2.5 text-sm text-[var(--text)]">
+        <li class="flex gap-3">
+          <span class="step-num">1</span>
+          <span><a href="https://www.tampermonkey.net/" target="_blank" rel="noopener noreferrer" class="underline underline-offset-2 decoration-[var(--border-strong)] hover:decoration-[var(--text)]">Tampermonkey</a> eklentisini kurun (Chrome, Edge, Brave, Firefox).</span>
+        </li>
+        <li class="flex gap-3">
+          <span class="step-num">2</span>
+          <span>Aşağıdaki butonla betiği açıp <strong class="font-semibold">Kur (Install)</strong> deyin.</span>
+        </li>
+        <li class="flex gap-3">
+          <span class="step-num">3</span>
+          <span>Sayfayı yenileyin; üst bardaki <span class="font-mono text-xs">3x</span> göstergesi “hazır” olur.</span>
+        </li>
+      </ol>
+
+      <div class="flex gap-2 pt-1">
+        <a href="calculus2_hizlandirici.user.js" target="_blank" class="btn btn-primary flex-1 justify-center">Betiği yükle (.user.js)</a>
+        <button onclick="toggleTmModal()" class="btn">Kapat</button>
+      </div>
     </div>
   </div>
 
   <!-- KLAVYE KISAYOLLARI MODALI -->
-  <div id="shortcuts-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs hidden flex items-center justify-center p-4">
-    <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl max-w-sm w-full p-5 space-y-4 shadow-2xl">
-      <div class="flex items-center justify-between border-b border-[var(--border)] pb-2">
-        <h3 class="text-sm font-bold text-[var(--text)]">Klavye Kısayolları</h3>
-        <button onclick="toggleShortcutsModal()" class="text-[var(--muted)] hover:text-[var(--text)] text-sm">✕</button>
+  <div id="shortcuts-modal" class="modal hidden" onclick="if (event.target === this) toggleShortcutsModal()">
+    <div class="modal-panel max-w-sm" role="dialog" aria-modal="true" aria-labelledby="shortcuts-title">
+      <div class="flex items-center justify-between">
+        <h3 id="shortcuts-title" class="text-base font-semibold text-[var(--text-strong)]">Klavye kısayolları</h3>
+        <button onclick="toggleShortcutsModal()" class="icon-btn" aria-label="Kapat">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
       </div>
-      <div class="space-y-2 text-xs">
-        <div class="flex justify-between py-1 border-b border-[var(--border)]/50"><span>1x / 1.25x / 1.5x / 2x</span><kbd class="px-1.5 py-0.5 bg-[var(--bg)] border border-[var(--border)] rounded font-mono font-bold">Q / W / E / R</kbd></div>
-        <div class="flex justify-between py-1 border-b border-[var(--border)]/50"><span>3x Hızlandırma ⚡</span><kbd class="px-1.5 py-0.5 bg-amber-500/20 text-amber-500 border border-amber-500/30 rounded font-mono font-bold">T</kbd></div>
-        <div class="flex justify-between py-1 border-b border-[var(--border)]/50"><span>Sinema Modu</span><kbd class="px-1.5 py-0.5 bg-[var(--bg)] border border-[var(--border)] rounded font-mono">F</kbd></div>
-        <div class="flex justify-between py-1 border-b border-[var(--border)]/50"><span>Oynat / Durdur</span><kbd class="px-1.5 py-0.5 bg-[var(--bg)] border border-[var(--border)] rounded font-mono">Boşluk</kbd></div>
-        <div class="flex justify-between py-1 border-b border-[var(--border)]/50"><span>10s Geri / İleri Sar</span><kbd class="px-1.5 py-0.5 bg-[var(--bg)] border border-[var(--border)] rounded font-mono">← / →</kbd></div>
-        <div class="flex justify-between py-1 border-b border-[var(--border)]/50"><span>Sonraki / Önceki</span><kbd class="px-1.5 py-0.5 bg-[var(--bg)] border border-[var(--border)] rounded font-mono">N / P</kbd></div>
-        <div class="flex justify-between py-1"><span>İzlendi İşaretle</span><kbd class="px-1.5 py-0.5 bg-[var(--bg)] border border-[var(--border)] rounded font-mono">M</kbd></div>
-      </div>
-      <button onclick="toggleShortcutsModal()" class="w-full py-2 bg-[var(--primary)] text-[var(--primary-fg)] rounded-xl text-xs font-semibold">Anladım</button>
+      <dl class="text-sm divide-y divide-[var(--border)]">
+        <div class="shortcut-row"><dt>Oynat / durdur</dt><dd><kbd class="kbd">Boşluk</kbd></dd></div>
+        <div class="shortcut-row"><dt>10 sn geri / ileri</dt><dd><kbd class="kbd">←</kbd><kbd class="kbd">→</kbd></dd></div>
+        <div class="shortcut-row"><dt>Hız 1x · 1.25x · 1.5x · 2x</dt><dd><kbd class="kbd">Q</kbd><kbd class="kbd">W</kbd><kbd class="kbd">E</kbd><kbd class="kbd">R</kbd></dd></div>
+        <div class="shortcut-row"><dt>Hız 3x (eklenti)</dt><dd><kbd class="kbd">T</kbd></dd></div>
+        <div class="shortcut-row"><dt>Hızı azalt / artır</dt><dd><kbd class="kbd">&lt;</kbd><kbd class="kbd">&gt;</kbd></dd></div>
+        <div class="shortcut-row"><dt>Sonraki / önceki</dt><dd><kbd class="kbd">N</kbd><kbd class="kbd">P</kbd></dd></div>
+        <div class="shortcut-row"><dt>İzlendi işaretle</dt><dd><kbd class="kbd">M</kbd></dd></div>
+        <div class="shortcut-row"><dt>Tam ekran</dt><dd><kbd class="kbd">F</kbd></dd></div>
+        <div class="shortcut-row"><dt>Geniş ekran</dt><dd><kbd class="kbd">Y</kbd></dd></div>
+        <div class="shortcut-row"><dt>Bu pencere</dt><dd><kbd class="kbd">?</kbd></dd></div>
+      </dl>
     </div>
   </div>
 
-  <!-- MODÜLER VERİ VE UYGULAMA SCRİPTLERİ -->
   <script src="js/data.js"></script>
   <script src="js/app.js"></script>
 </body>

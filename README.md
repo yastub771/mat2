@@ -6,7 +6,7 @@
 
 ## 🚀 Özellikler
 
-* **🎥 Gömülü YouTube Oynatıcı & Sinema Modu:** Siteden ayrılmadan tüm ders ve soru çözüm videolarını geniş ekranda veya tam ekran sinema modunda (<kbd>F</kbd> tuşu) izleme.
+* **🎥 Gömülü YouTube Oynatıcı & Sinema Modu:** Siteden ayrılmadan tüm ders ve soru çözüm videolarını geniş ekran modunda (<kbd>Y</kbd>) veya tam ekranda (<kbd>F</kbd>) izleme.
 * **⚡ 1x – 3x Hızlandırma & QWERTY Kısayolları:**
   * `0.75x`, `1.0x`, `1.25x`, `1.5x`, `1.75x`, `2.0x` (Resmi YouTube hızları — ücretsiz)
   * `2.5x` ve `3.0x` özel hızlandırma (Tampermonkey Userscript köprüsü ile)
@@ -49,7 +49,7 @@ YouTube resmi oynatıcı API'si hızı maksimum **2.0x** ile sınırlar ve taray
 **2.5x ve 3.0x hızlarını doğrudan kullanabilmek için:**
 1. Tarayıcınıza [Tampermonkey](https://www.tampermonkey.net/) eklentisini kurun.
 2. Projedeki **`calculus2_hizlandirici.user.js`** dosyasına (veya site içindeki *"1-Tıkla Scripti Yükle"* butonuna) tıklayıp **"Kur (Install)"** deyin.
-3. Sayfayı yenilediğinizde üst bardaki rozet yeşile döner (`🟢 3x Aktif (TM)`) ve <kbd>T</kbd> tuşu veya `3x` butonu doğrudan YouTube videosuna etki eder.
+3. Sayfayı yenilediğinizde üst bardaki gösterge `3x hazır` olur ve <kbd>T</kbd> tuşu veya hız menüsündeki `3x` doğrudan YouTube videosuna etki eder.
 
 ---
 
@@ -59,7 +59,8 @@ YouTube resmi oynatıcı API'si hızı maksimum **2.0x** ile sınırlar ve taray
 | :--- | :--- |
 | **Q / W / E / R** | Hızlı Hız Değiştirme (`1.0x` / `1.25x` / `1.5x` / `2.0x`) |
 | **T** | Doğrudan **3.0x Hızlandırma** ⚡ (Tampermonkey ile) |
-| **F** | Sinema / Geniş Ekran Modunu Aç / Kapat |
+| **F** | Tam Ekran Aç / Kapat |
+| **Y** | Sinema / Geniş Ekran Modunu Aç / Kapat |
 | **Boşluk (Space)** | Oynat / Durdur (Toggle) |
 | **← / → (Sol / Sağ Ok)** | 10 Saniye Geri / İleri Sar |
 | **N / P** | Sonraki / Önceki Videoya Geç |
