@@ -1,0 +1,20 @@
+{
+  "name": "calculus2-portal",
+  "version": "1.2.0",
+  "description": "Üniversite Calculus 2 (Matematik 2) 13 haftalık müfredat video öğrenim portalı, 1x-3x hız kontrolü, ders notları ve ilerleme takipçisi.",
+  "main": "js/app.js",
+  "scripts": {
+    "start": "npx serve -l 8080 .",
+    "dev": "npx serve -l 8080 .",
+    "build:data": "python scripts/build_data.py",
+    "check": "node -c js/app.js && node -c js/data.js"
+  },
+  "keywords": [
+    "calculus-2",
+    "buders",
+    "matematik-2",
+    "video-player",
+    "study-tracker"
+  ],
+  "license": "MIT"
+}

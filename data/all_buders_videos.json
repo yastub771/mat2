@@ -1,0 +1,3813 @@
+[
+  {
+    "group": "Diziler & Seriler",
+    "topics": [
+      {
+        "title": "Diziler ve Seriler",
+        "sub": "Sequences & Series",
+        "href": "diziler_ve_seriler.html",
+        "url": "https://www.buders.com/altsayfa/diziler_ve_seriler.html",
+        "videos": [
+          {
+            "num": "01",
+            "title": "Dizi (Sequence) Nedir?",
+            "link": "https://youtu.be/z7UBx7_QIVU",
+            "subgroup": ""
+          },
+          {
+            "num": "02",
+            "title": "Dizilerin Limitini Bulma",
+            "link": "https://youtu.be/sk3WLFTRswc",
+            "subgroup": ""
+          },
+          {
+            "num": "03",
+            "title": "Dizilerin Yakınsak veya Iraksak Olup Olmadığını Belirleme",
+            "link": "https://youtu.be/ZckR-hez4Fc",
+            "subgroup": ""
+          },
+          {
+            "num": "04",
+            "title": "Artan, Azalan ve Monoton Diziler",
+            "link": "https://youtu.be/XPBnZEhmErM",
+            "subgroup": ""
+          },
+          {
+            "num": "05",
+            "title": "Türev Kullanarak Dizilerin Artan veya Azalan Olduğunu Belirleme",
+            "link": "https://youtu.be/pUpbPgSqgpw",
+            "subgroup": ""
+          },
+          {
+            "num": "06",
+            "title": "Sınırlı Diziler ve EBAS-EKÜS",
+            "link": "https://youtu.be/Ll_8aPqUeco",
+            "subgroup": ""
+          },
+          {
+            "num": "07",
+            "title": "Monoton Yakınsak Teoremi",
+            "link": "https://youtu.be/7An-Md1oHME",
+            "subgroup": ""
+          },
+          {
+            "num": "M1",
+            "title": "Monoton ve Sınırlı Diziler — Soru 1",
+            "link": "https://youtu.be/divRtaBNE8k",
+            "subgroup": ""
+          },
+          {
+            "num": "M2",
+            "title": "Monoton ve Sınırlı Diziler — Soru 2",
+            "link": "https://youtu.be/GYP-x1S0MiY",
+            "subgroup": ""
+          },
+          {
+            "num": "M3",
+            "title": "Monoton ve Sınırlı Diziler — Soru 3",
+            "link": "https://youtu.be/Io5uYPEaylk",
+            "subgroup": ""
+          },
+          {
+            "num": "M4",
+            "title": "Monoton ve Sınırlı Diziler — Soru 4",
+            "link": "https://youtu.be/HNLAJbfdSyM",
+            "subgroup": ""
+          },
+          {
+            "num": "M5",
+            "title": "Monoton ve Sınırlı Diziler — Soru 5",
+            "link": "https://youtu.be/TdYjaBZC7YY",
+            "subgroup": ""
+          },
+          {
+            "num": "M6",
+            "title": "Monoton ve Sınırlı Diziler — Soru 6",
+            "link": "https://youtu.be/xy3FYYTKqXA",
+            "subgroup": ""
+          },
+          {
+            "num": "R1",
+            "title": "Özyineli Dizilerin Limitini Bulma — Soru 1",
+            "link": "https://youtu.be/3HCbFQdpZrk",
+            "subgroup": ""
+          },
+          {
+            "num": "R2",
+            "title": "Özyineli Dizilerin Limitini Bulma — Soru 2",
+            "link": "https://youtu.be/x8A_xKzaMPI",
+            "subgroup": ""
+          },
+          {
+            "num": "D1",
+            "title": "Diziler — Soru 1",
+            "link": "https://youtu.be/GhxgUPxMECw",
+            "subgroup": ""
+          },
+          {
+            "num": "D2",
+            "title": "Diziler — Soru 2",
+            "link": "https://youtu.be/RWHABVpjz9A",
+            "subgroup": ""
+          },
+          {
+            "num": "D3",
+            "title": "Diziler — Soru 3",
+            "link": "https://youtu.be/8iz-ex5e9SI",
+            "subgroup": ""
+          },
+          {
+            "num": "D4",
+            "title": "Diziler — Soru 4",
+            "link": "https://youtu.be/DAt1eMaJvXk",
+            "subgroup": ""
+          },
+          {
+            "num": "D5",
+            "title": "Diziler — Soru 5",
+            "link": "https://youtu.be/-8GVO9cW6qU",
+            "subgroup": ""
+          },
+          {
+            "num": "21",
+            "title": "Seri (Series) Nedir?",
+            "link": "https://youtu.be/63ynve7hGnA",
+            "subgroup": ""
+          },
+          {
+            "num": "22",
+            "title": "Seri Testleri ve Amaçları",
+            "link": "https://youtu.be/eQdzrSeUYpA",
+            "subgroup": ""
+          },
+          {
+            "num": "23",
+            "title": "N. Terim Testi (Iraksaklık Testi)",
+            "link": "https://youtu.be/2ZqUSm7g5LA",
+            "subgroup": ""
+          },
+          {
+            "num": "38",
+            "title": "Harmonik Seriler",
+            "link": "https://youtu.be/AhpB-C_9HC8",
+            "subgroup": ""
+          },
+          {
+            "num": "39",
+            "title": "P Serisi Testi",
+            "link": "https://youtu.be/2Hrz_2isZF8",
+            "subgroup": ""
+          },
+          {
+            "num": "24",
+            "title": "Geometrik Seri Testi",
+            "link": "https://youtu.be/3-techGweNQ",
+            "subgroup": ""
+          },
+          {
+            "num": "25",
+            "title": "Geometrik Serilerin Toplamını Bulma",
+            "link": "https://youtu.be/n-RsKipqgN4",
+            "subgroup": ""
+          },
+          {
+            "num": "G1",
+            "title": "Geometrik Seri — Soru 1",
+            "link": "https://youtu.be/AIq8VusCKuQ",
+            "subgroup": ""
+          },
+          {
+            "num": "27",
+            "title": "Teleskopik Seriler ve Özellikleri",
+            "link": "https://youtu.be/QO8WDCf5s1c",
+            "subgroup": ""
+          },
+          {
+            "num": "T1",
+            "title": "Serilerin Toplamını Bulma — Soru 1",
+            "link": "https://youtu.be/9G8H7OMUPXc",
+            "subgroup": ""
+          },
+          {
+            "num": "T2",
+            "title": "Serilerin Toplamını Bulma — Soru 2",
+            "link": "https://youtu.be/Ay71B9pCVkg",
+            "subgroup": ""
+          },
+          {
+            "num": "T3",
+            "title": "Serilerin Toplamını Bulma — Soru 3",
+            "link": "https://youtu.be/3IzvE6fPLj0",
+            "subgroup": ""
+          },
+          {
+            "num": "T4",
+            "title": "Serilerin Toplamını Bulma — Soru 4",
+            "link": "https://youtu.be/HUQhDIpDnn4",
+            "subgroup": ""
+          },
+          {
+            "num": "T5",
+            "title": "Serilerin Toplamını Bulma — Soru 5",
+            "link": "https://youtu.be/qrNZ1kgKK6M",
+            "subgroup": ""
+          },
+          {
+            "num": "T6",
+            "title": "Serilerin Toplamını Bulma — Soru 6",
+            "link": "https://youtu.be/1EOkdjJEMug",
+            "subgroup": ""
+          },
+          {
+            "num": "T7",
+            "title": "Serilerin Toplamını Bulma — Soru 7",
+            "link": "https://youtu.be/rs84cTA53kU",
+            "subgroup": ""
+          },
+          {
+            "num": "T8",
+            "title": "Serilerin Toplamını Bulma — Soru 8",
+            "link": "https://youtu.be/WNMgoUagohc",
+            "subgroup": ""
+          },
+          {
+            "num": "T9",
+            "title": "Serilerin Toplamını Bulma — Soru 9",
+            "link": "https://youtu.be/TsXmOYU-FJE",
+            "subgroup": ""
+          },
+          {
+            "num": "37",
+            "title": "1+½+⅓+¼+… Özel Serinin Toplamını Bulma",
+            "link": "https://youtu.be/VsG2GzGWlYc",
+            "subgroup": ""
+          },
+          {
+            "num": "40",
+            "title": "İntegral Testi (Integral Test)",
+            "link": "https://youtu.be/mTDR6_3_VgE",
+            "subgroup": ""
+          },
+          {
+            "num": "41",
+            "title": "İntegral Test ile Seri Toplamının Değer Aralığını Bulma",
+            "link": "https://youtu.be/6Jcm8oaQtZo",
+            "subgroup": ""
+          },
+          {
+            "num": "İ1",
+            "title": "İntegral Testi — Soru 1",
+            "link": "https://youtu.be/_IR92vKCRRY",
+            "subgroup": ""
+          },
+          {
+            "num": "İ2",
+            "title": "İntegral Testi — Soru 2",
+            "link": "https://youtu.be/jD2XuQH1VIM",
+            "subgroup": ""
+          },
+          {
+            "num": "44",
+            "title": "Karşılaştırma Testleri",
+            "link": "https://youtu.be/2ZtV_MOdGOI",
+            "subgroup": ""
+          },
+          {
+            "num": "45",
+            "title": "Limit Karşılaştırma Testinde Ek Kurallar",
+            "link": "https://youtu.be/OuUaavr2akU",
+            "subgroup": ""
+          },
+          {
+            "num": "K1",
+            "title": "Karşılaştırma Testleri — Soru 1",
+            "link": "https://youtu.be/TYD_iP6EtgA",
+            "subgroup": ""
+          },
+          {
+            "num": "K2",
+            "title": "Karşılaştırma Testleri — Soru 2",
+            "link": "https://youtu.be/-1k5osfihQc",
+            "subgroup": ""
+          },
+          {
+            "num": "K3",
+            "title": "Karşılaştırma Testleri — Soru 3",
+            "link": "https://youtu.be/HVTUtCRifRc",
+            "subgroup": ""
+          },
+          {
+            "num": "K4",
+            "title": "Karşılaştırma Testleri — Soru 4",
+            "link": "https://youtu.be/gdZAfS0SSq4",
+            "subgroup": ""
+          },
+          {
+            "num": "K5",
+            "title": "Karşılaştırma Testleri — Soru 5",
+            "link": "https://youtu.be/LSNG8pwGAEo",
+            "subgroup": ""
+          },
+          {
+            "num": "K6",
+            "title": "Karşılaştırma Testleri — Soru 6",
+            "link": "https://youtu.be/L0EwgunUm8o",
+            "subgroup": ""
+          },
+          {
+            "num": "52",
+            "title": "Oran Testi",
+            "link": "https://youtu.be/ZlCZRhvZ10M",
+            "subgroup": ""
+          },
+          {
+            "num": "O1",
+            "title": "Oran Testi — Soru 1",
+            "link": "https://youtu.be/1rc7cPPYtNU",
+            "subgroup": ""
+          },
+          {
+            "num": "O2",
+            "title": "Oran Testi — Soru 2",
+            "link": "https://youtu.be/gSwgxLx2iXU",
+            "subgroup": ""
+          },
+          {
+            "num": "55",
+            "title": "Kök Testi",
+            "link": "https://youtu.be/yeXCtxfpkrE",
+            "subgroup": ""
+          },
+          {
+            "num": "56",
+            "title": "Raabe Testi",
+            "link": "https://youtu.be/TH7wdfdLb80",
+            "subgroup": ""
+          },
+          {
+            "num": "57",
+            "title": "Alterne Seri Testi",
+            "link": "https://youtu.be/2K3JyPiJ8UA",
+            "subgroup": ""
+          },
+          {
+            "num": "58",
+            "title": "Mutlak ve Koşullu Yakınsaklık",
+            "link": "https://youtu.be/acanzzpjfM0",
+            "subgroup": ""
+          },
+          {
+            "num": "59",
+            "title": "Alterne Serilerde Tahmin Teoremi",
+            "link": "https://youtu.be/XMYheSKiJG0",
+            "subgroup": ""
+          },
+          {
+            "num": "A1",
+            "title": "Alterne Seriler Tahmin Teoremi — Soru 1",
+            "link": "https://youtu.be/EJZpPYIEiss",
+            "subgroup": ""
+          },
+          {
+            "num": "A2",
+            "title": "Alterne Seriler Tahmin Teoremi — Soru 2",
+            "link": "https://youtu.be/_fAXOw_1YLY",
+            "subgroup": ""
+          },
+          {
+            "num": "62",
+            "title": "Seri Testleri Örnek Soru Çözümleri",
+            "link": "https://youtu.be/-3D2fGL3PDo",
+            "subgroup": ""
+          },
+          {
+            "num": "63",
+            "title": "Seri Testleri Örnek Soru Çözümleri",
+            "link": "https://youtu.be/6_M71D5T_Lw",
+            "subgroup": ""
+          }
+        ]
+      },
+      {
+        "title": "Seri Testleri Örnek Sorular",
+        "sub": "",
+        "href": "seri_testleri_ornek_sorular.html",
+        "url": "https://www.buders.com/altsayfa/seri_testleri_ornek_sorular.html",
+        "videos": [
+          {
+            "num": "S01",
+            "title": "Seri Testleri — Soru 1",
+            "link": "https://youtu.be/MUv5XjqZj1Y",
+            "subgroup": "① Seri Testleri — Sorular 1–13"
+          },
+          {
+            "num": "S02",
+            "title": "Seri Testleri — Soru 2",
+            "link": "https://youtu.be/d-_77E7nCKc",
+            "subgroup": "① Seri Testleri — Sorular 1–13"
+          },
+          {
+            "num": "S03",
+            "title": "Seri Testleri — Soru 3",
+            "link": "https://youtu.be/V7SUY7_4epM",
+            "subgroup": "① Seri Testleri — Sorular 1–13"
+          },
+          {
+            "num": "S04",
+            "title": "Seri Testleri — Soru 4",
+            "link": "https://youtu.be/YvzCY6kVwXI",
+            "subgroup": "① Seri Testleri — Sorular 1–13"
+          },
+          {
+            "num": "S05",
+            "title": "Seri Testleri — Soru 5",
+            "link": "https://youtu.be/zKuA_-rJCfA",
+            "subgroup": "① Seri Testleri — Sorular 1–13"
+          },
+          {
+            "num": "S06",
+            "title": "Seri Testleri — Soru 6",
+            "link": "https://youtu.be/KD8lZaaKrtA",
+            "subgroup": "① Seri Testleri — Sorular 1–13"
+          },
+          {
+            "num": "S07",
+            "title": "Seri Testleri — Soru 7",
+            "link": "https://youtu.be/Bz_mUag3vr0",
+            "subgroup": "① Seri Testleri — Sorular 1–13"
+          },
+          {
+            "num": "S08",
+            "title": "Seri Testleri — Soru 8",
+            "link": "https://youtu.be/u5FjCoiWLgQ",
+            "subgroup": "① Seri Testleri — Sorular 1–13"
+          },
+          {
+            "num": "S09",
+            "title": "Seri Testleri — Soru 9",
+            "link": "https://youtu.be/VbHAKQPgwVQ",
+            "subgroup": "① Seri Testleri — Sorular 1–13"
+          },
+          {
+            "num": "S10",
+            "title": "Seri Testleri — Soru 10",
+            "link": "https://youtu.be/1_hrVJIahS0",
+            "subgroup": "① Seri Testleri — Sorular 1–13"
+          },
+          {
+            "num": "S11",
+            "title": "Seri Testleri — Soru 11",
+            "link": "https://youtu.be/hrqy-5_rxBA",
+            "subgroup": "① Seri Testleri — Sorular 1–13"
+          },
+          {
+            "num": "S12",
+            "title": "Seri Testleri — Soru 12",
+            "link": "https://youtu.be/uRdf66IWXuA",
+            "subgroup": "① Seri Testleri — Sorular 1–13"
+          },
+          {
+            "num": "S13",
+            "title": "Seri Testleri — Soru 13",
+            "link": "https://youtu.be/cI7G29exs2c",
+            "subgroup": "① Seri Testleri — Sorular 1–13"
+          },
+          {
+            "num": "S14",
+            "title": "Seri Testleri — Soru 14",
+            "link": "https://youtu.be/nbdZtWFo7nY",
+            "subgroup": "② Seri Testleri — Sorular 14–25"
+          },
+          {
+            "num": "S15",
+            "title": "Seri Testleri — Soru 15",
+            "link": "https://youtu.be/PoEibYtoFus",
+            "subgroup": "② Seri Testleri — Sorular 14–25"
+          },
+          {
+            "num": "S16",
+            "title": "Seri Testleri — Soru 16",
+            "link": "https://youtu.be/ANDqB1LW1Gs",
+            "subgroup": "② Seri Testleri — Sorular 14–25"
+          },
+          {
+            "num": "S17",
+            "title": "Seri Testleri — Soru 17",
+            "link": "https://youtu.be/Eu6vBh3Q2uM",
+            "subgroup": "② Seri Testleri — Sorular 14–25"
+          },
+          {
+            "num": "S18",
+            "title": "Seri Testleri — Soru 18",
+            "link": "https://youtu.be/PoMqABn_Jwo",
+            "subgroup": "② Seri Testleri — Sorular 14–25"
+          },
+          {
+            "num": "S19",
+            "title": "Seri Testleri — Soru 19",
+            "link": "https://youtu.be/Av6M9sYsxYo",
+            "subgroup": "② Seri Testleri — Sorular 14–25"
+          },
+          {
+            "num": "S20",
+            "title": "Seri Testleri — Soru 20",
+            "link": "https://youtu.be/YcNY8xyevq4",
+            "subgroup": "② Seri Testleri — Sorular 14–25"
+          },
+          {
+            "num": "S21",
+            "title": "Seri Testleri — Soru 21",
+            "link": "https://youtu.be/ibexV1YlPuM",
+            "subgroup": "② Seri Testleri — Sorular 14–25"
+          },
+          {
+            "num": "S22",
+            "title": "Seri Testleri — Soru 22",
+            "link": "https://youtu.be/E6GmZIpR2h8",
+            "subgroup": "② Seri Testleri — Sorular 14–25"
+          },
+          {
+            "num": "S23",
+            "title": "Seri Testleri — Soru 23",
+            "link": "https://youtu.be/_ZA8YxUihvE",
+            "subgroup": "② Seri Testleri — Sorular 14–25"
+          },
+          {
+            "num": "S24",
+            "title": "Seri Testleri — Soru 24",
+            "link": "https://youtu.be/A89834ZGLzU",
+            "subgroup": "② Seri Testleri — Sorular 14–25"
+          },
+          {
+            "num": "S25",
+            "title": "Seri Testleri — Soru 25",
+            "link": "https://youtu.be/_VAMoHJ0wEs",
+            "subgroup": "② Seri Testleri — Sorular 14–25"
+          }
+        ]
+      },
+      {
+        "title": "Kuvvet Serileri",
+        "sub": "Power Series",
+        "href": "kuvvet_serileri.html",
+        "url": "https://www.buders.com/altsayfa/kuvvet_serileri.html",
+        "videos": [
+          {
+            "num": "01",
+            "title": "Kuvvet Serileri",
+            "link": "https://youtu.be/LRpqC87_ebs",
+            "subgroup": ""
+          },
+          {
+            "num": "02",
+            "title": "Kuvvet Serilerinin Yakınsaklık Aralığı ve Yarıçapı",
+            "link": "https://youtu.be/ivP8roxnvtU",
+            "subgroup": ""
+          },
+          {
+            "num": "03",
+            "title": "Yakınsaklık Aralığı ve Yarıçapı — Örnek Sorular",
+            "link": "https://youtu.be/t4SrDgZOk0g",
+            "subgroup": ""
+          },
+          {
+            "num": "04",
+            "title": "Kök Testi ile Kuvvet Serilerinin Yakınsaklık Aralığını Bulma",
+            "link": "https://youtu.be/vnocAIWoD0Y",
+            "subgroup": ""
+          },
+          {
+            "num": "S1",
+            "title": "Yakınsaklık Aralığı — Soru 1",
+            "link": "https://youtu.be/8g8_hLZln9c",
+            "subgroup": ""
+          },
+          {
+            "num": "S2",
+            "title": "Yakınsaklık Aralığı — Soru 2",
+            "link": "https://youtu.be/tYhq0LgqzvU",
+            "subgroup": ""
+          },
+          {
+            "num": "S3",
+            "title": "Yakınsaklık Aralığı — Soru 3",
+            "link": "https://youtu.be/tTKhKZOl63Q",
+            "subgroup": ""
+          },
+          {
+            "num": "S4",
+            "title": "Yakınsaklık Aralığı — Soru 4",
+            "link": "https://youtu.be/A8ztRcpJffI",
+            "subgroup": ""
+          },
+          {
+            "num": "S5",
+            "title": "Yakınsaklık Aralığı — Soru 5",
+            "link": "https://youtu.be/OEwkBCVFjPg",
+            "subgroup": ""
+          }
+        ]
+      },
+      {
+        "title": "Taylor ve Maclaurin Serileri",
+        "sub": "Taylor & Maclaurin Series",
+        "href": "taylor_ve_maclaurin_serileri.html",
+        "url": "https://www.buders.com/altsayfa/taylor_ve_maclaurin_serileri.html",
+        "videos": [
+          {
+            "num": "01",
+            "title": "Taylor ve Maclaurin Seri Açılımları",
+            "link": "https://youtu.be/NqCPeLclcys",
+            "subgroup": ""
+          },
+          {
+            "num": "02",
+            "title": "Taylor ve Maclaurin Serilerini Bulma",
+            "link": "https://youtu.be/tDY6XyI1TeE",
+            "subgroup": ""
+          },
+          {
+            "num": "03",
+            "title": "Taylor ve Maclaurin Serilerinde Kalan Terimi (Modüler Konu Anlatım)",
+            "link": "taylor_ve_maclaurin_serilerinde_kalan_terimi.html",
+            "subgroup": ""
+          },
+          {
+            "num": "03",
+            "title": "1/(1−x) — Maclaurin Serisi",
+            "link": "https://youtu.be/9znltvtWWic",
+            "subgroup": ""
+          },
+          {
+            "num": "04",
+            "title": "eˣ — Maclaurin Serisi",
+            "link": "https://youtu.be/do1AByIeiec",
+            "subgroup": ""
+          },
+          {
+            "num": "05",
+            "title": "sin x — Maclaurin Serisi",
+            "link": "https://youtu.be/7HdbASjdh-c",
+            "subgroup": ""
+          },
+          {
+            "num": "06",
+            "title": "cos x — Maclaurin Serisi",
+            "link": "https://youtu.be/2kN-O3hyKe8",
+            "subgroup": ""
+          },
+          {
+            "num": "07",
+            "title": "ln(1+x) — Maclaurin Serisi",
+            "link": "https://youtu.be/sNB6X2iM0oE",
+            "subgroup": ""
+          },
+          {
+            "num": "08",
+            "title": "arctan(x) — Maclaurin Serisi",
+            "link": "https://youtu.be/yVd84paDsrk",
+            "subgroup": ""
+          },
+          {
+            "num": "Y1",
+            "title": "Maclaurin Serisi Bulma — Soru 1",
+            "link": "https://youtu.be/jVQAiEbsZwk",
+            "subgroup": ""
+          },
+          {
+            "num": "Y2",
+            "title": "Maclaurin Serisi Bulma — Soru 2",
+            "link": "https://youtu.be/lMWmyljKCxw",
+            "subgroup": ""
+          },
+          {
+            "num": "11",
+            "title": "Taylor/Maclaurin Serileri ile Limit Hesaplama",
+            "link": "https://youtu.be/vKpMemY-_zI",
+            "subgroup": ""
+          },
+          {
+            "num": "L1",
+            "title": "Seri ile Limit — Soru 1",
+            "link": "https://youtu.be/nQ4umIXNGwo",
+            "subgroup": ""
+          },
+          {
+            "num": "L2",
+            "title": "Seri ile Limit — Soru 2",
+            "link": "https://youtu.be/o3E-j9_H_UI",
+            "subgroup": ""
+          },
+          {
+            "num": "L3",
+            "title": "Seri ile Limit — Soru 3",
+            "link": "https://youtu.be/4KE8Qknq5SA",
+            "subgroup": ""
+          },
+          {
+            "num": "15",
+            "title": "Taylor/Maclaurin Serileri ile İntegral Hesaplama",
+            "link": "https://youtu.be/hE_E8iGbwPI",
+            "subgroup": ""
+          },
+          {
+            "num": "İ1",
+            "title": "Seri ile İntegral — Soru 1",
+            "link": "https://youtu.be/aRSZ7-On-bk",
+            "subgroup": ""
+          },
+          {
+            "num": "İ2",
+            "title": "Seri ile İntegral — Soru 2",
+            "link": "https://youtu.be/ASdNNO6G5wY",
+            "subgroup": ""
+          },
+          {
+            "num": "İ3",
+            "title": "Seri ile İntegral — Soru 3",
+            "link": "https://youtu.be/BI6GA8G1eSc",
+            "subgroup": ""
+          },
+          {
+            "num": "İ4",
+            "title": "Seri ile İntegral — Soru 4",
+            "link": "https://youtu.be/HN7MNC6dtA0",
+            "subgroup": ""
+          },
+          {
+            "num": "20",
+            "title": "Maclaurin Serileri ile Seri Toplamı Bulma",
+            "link": "https://youtu.be/5OVsknWxm_Q",
+            "subgroup": ""
+          },
+          {
+            "num": "T1",
+            "title": "Seri Toplamı — Soru 1",
+            "link": "https://youtu.be/ghrsBaoeINY",
+            "subgroup": ""
+          },
+          {
+            "num": "T2",
+            "title": "Seri Toplamı — Soru 2",
+            "link": "https://youtu.be/jiq8rOhuX6c",
+            "subgroup": ""
+          },
+          {
+            "num": "T3",
+            "title": "Seri Toplamı — Soru 3",
+            "link": "https://youtu.be/_zO23uM-AJE",
+            "subgroup": ""
+          },
+          {
+            "num": "T4",
+            "title": "Seri Toplamı — Soru 4",
+            "link": "https://youtu.be/NltcZUCK14U",
+            "subgroup": ""
+          },
+          {
+            "num": "T5",
+            "title": "Seri Toplamı — Soru 5",
+            "link": "https://youtu.be/i1UfPajhOhs",
+            "subgroup": ""
+          },
+          {
+            "num": "S1",
+            "title": "Taylor ve Maclaurin Serileri — Soru 1",
+            "link": "https://youtu.be/LAbk0hQd1PE",
+            "subgroup": ""
+          },
+          {
+            "num": "S2",
+            "title": "Taylor ve Maclaurin Serileri — Soru 2",
+            "link": "https://youtu.be/RrH6YfSdd-c",
+            "subgroup": ""
+          },
+          {
+            "num": "S3",
+            "title": "Taylor ve Maclaurin Serileri — Soru 3",
+            "link": "https://youtu.be/2-ilas12Tyg",
+            "subgroup": ""
+          },
+          {
+            "num": "S4",
+            "title": "Taylor ve Maclaurin Serileri — Soru 4",
+            "link": "https://youtu.be/OFnsguZbqIk",
+            "subgroup": ""
+          },
+          {
+            "num": "S5",
+            "title": "Taylor ve Maclaurin Serileri — Soru 5",
+            "link": "https://youtu.be/yyDnFX2Ms40",
+            "subgroup": ""
+          },
+          {
+            "num": "S6",
+            "title": "Taylor ve Maclaurin Serileri — Soru 6",
+            "link": "https://youtu.be/VRFehlfkEQk",
+            "subgroup": ""
+          },
+          {
+            "num": "S7",
+            "title": "Taylor ve Maclaurin Serileri — Soru 7",
+            "link": "https://youtu.be/2tVdoy3gR3s",
+            "subgroup": ""
+          },
+          {
+            "num": "S8",
+            "title": "Taylor ve Maclaurin Serileri — Soru 8",
+            "link": "https://youtu.be/le9zqFiUJE8",
+            "subgroup": ""
+          },
+          {
+            "num": "S9",
+            "title": "Taylor ve Maclaurin Serileri — Soru 9",
+            "link": "https://youtu.be/QXSwVuE5Q2Y",
+            "subgroup": ""
+          }
+        ]
+      },
+      {
+        "title": "Vize ve Finalde Çıkmış Seri Soruları",
+        "sub": "",
+        "href": "vize_ve_finalde_cikmis_seri_sorulari.html",
+        "url": "https://www.buders.com/altsayfa/vize_ve_finalde_cikmis_seri_sorulari.html",
+        "videos": [
+          {
+            "num": "S01",
+            "title": "Vize / Final — Soru 1",
+            "link": "https://youtu.be/jUqb70TA90U",
+            "subgroup": "① Sınav Soruları — 1–11"
+          },
+          {
+            "num": "S02",
+            "title": "Vize / Final — Soru 2",
+            "link": "https://youtu.be/clq_Wu-x7UA",
+            "subgroup": "① Sınav Soruları — 1–11"
+          },
+          {
+            "num": "S03",
+            "title": "Vize / Final — Soru 3",
+            "link": "https://youtu.be/kbumE9kF9cY",
+            "subgroup": "① Sınav Soruları — 1–11"
+          },
+          {
+            "num": "S04",
+            "title": "Vize / Final — Soru 4",
+            "link": "https://youtu.be/onSqHbhfjHA",
+            "subgroup": "① Sınav Soruları — 1–11"
+          },
+          {
+            "num": "S05",
+            "title": "Vize / Final — Soru 5",
+            "link": "https://youtu.be/qVHBBClLARE",
+            "subgroup": "① Sınav Soruları — 1–11"
+          },
+          {
+            "num": "S06",
+            "title": "Vize / Final — Soru 6",
+            "link": "https://youtu.be/1CB12KJDgCU",
+            "subgroup": "① Sınav Soruları — 1–11"
+          },
+          {
+            "num": "S07",
+            "title": "Vize / Final — Soru 7",
+            "link": "https://youtu.be/OWz4LhHxm_w",
+            "subgroup": "① Sınav Soruları — 1–11"
+          },
+          {
+            "num": "S08",
+            "title": "Vize / Final — Soru 8",
+            "link": "https://youtu.be/wGTSkLHNucA",
+            "subgroup": "① Sınav Soruları — 1–11"
+          },
+          {
+            "num": "S09",
+            "title": "Vize / Final — Soru 9",
+            "link": "https://youtu.be/NHg5rMfwBI0",
+            "subgroup": "① Sınav Soruları — 1–11"
+          },
+          {
+            "num": "S10",
+            "title": "Vize / Final — Soru 10",
+            "link": "https://youtu.be/rtxLjFWryP0",
+            "subgroup": "① Sınav Soruları — 1–11"
+          },
+          {
+            "num": "S11",
+            "title": "Vize / Final — Soru 11",
+            "link": "https://youtu.be/flbfYF-AetM",
+            "subgroup": "① Sınav Soruları — 1–11"
+          },
+          {
+            "num": "S12",
+            "title": "Vize / Final — Soru 12",
+            "link": "https://youtu.be/VVUXqQRGVh4",
+            "subgroup": "② Sınav Soruları — 12–22"
+          },
+          {
+            "num": "S13",
+            "title": "Vize / Final — Soru 13",
+            "link": "https://youtu.be/YoXw0-lKQ1E",
+            "subgroup": "② Sınav Soruları — 12–22"
+          },
+          {
+            "num": "S14",
+            "title": "Vize / Final — Soru 14",
+            "link": "https://youtu.be/8i8Nm32nlNM",
+            "subgroup": "② Sınav Soruları — 12–22"
+          },
+          {
+            "num": "S15",
+            "title": "Vize / Final — Soru 15",
+            "link": "https://youtu.be/EDj_iqB8hPE",
+            "subgroup": "② Sınav Soruları — 12–22"
+          },
+          {
+            "num": "S16",
+            "title": "Vize / Final — Soru 16",
+            "link": "https://youtu.be/Uv7e5jG2xbg",
+            "subgroup": "② Sınav Soruları — 12–22"
+          },
+          {
+            "num": "S17",
+            "title": "Vize / Final — Soru 17",
+            "link": "https://youtu.be/0yhNPE221UU",
+            "subgroup": "② Sınav Soruları — 12–22"
+          },
+          {
+            "num": "S18",
+            "title": "Vize / Final — Soru 18",
+            "link": "https://youtu.be/FWFd1MgkOgQ",
+            "subgroup": "② Sınav Soruları — 12–22"
+          },
+          {
+            "num": "S19",
+            "title": "Vize / Final — Soru 19",
+            "link": "https://youtu.be/xkX-x1kQTMo",
+            "subgroup": "② Sınav Soruları — 12–22"
+          },
+          {
+            "num": "S20",
+            "title": "Vize / Final — Soru 20",
+            "link": "https://youtu.be/yVWevrjtz5w",
+            "subgroup": "② Sınav Soruları — 12–22"
+          },
+          {
+            "num": "S21",
+            "title": "Vize / Final — Soru 21",
+            "link": "https://youtu.be/SUD8bRAO374",
+            "subgroup": "② Sınav Soruları — 12–22"
+          },
+          {
+            "num": "S22",
+            "title": "Vize / Final — Soru 22",
+            "link": "https://youtu.be/PCsyE5SswVk",
+            "subgroup": "② Sınav Soruları — 12–22"
+          },
+          {
+            "num": "S23",
+            "title": "Vize / Final — Soru 23",
+            "link": "https://youtu.be/9kKt8sB9h_U",
+            "subgroup": "③ Sınav Soruları — 23–32"
+          },
+          {
+            "num": "S24",
+            "title": "Vize / Final — Soru 24",
+            "link": "https://youtu.be/b9YDTVqm5Uw",
+            "subgroup": "③ Sınav Soruları — 23–32"
+          },
+          {
+            "num": "S25",
+            "title": "Vize / Final — Soru 25",
+            "link": "https://youtu.be/_S7H8Zn5Wvk",
+            "subgroup": "③ Sınav Soruları — 23–32"
+          },
+          {
+            "num": "S26",
+            "title": "Vize / Final — Soru 26",
+            "link": "https://youtu.be/S-JY5go0Rus",
+            "subgroup": "③ Sınav Soruları — 23–32"
+          },
+          {
+            "num": "S27",
+            "title": "Vize / Final — Soru 27",
+            "link": "https://youtu.be/pX62O6QsGmo",
+            "subgroup": "③ Sınav Soruları — 23–32"
+          },
+          {
+            "num": "S28",
+            "title": "Vize / Final — Soru 28",
+            "link": "https://youtu.be/XnuDwqW9S6c",
+            "subgroup": "③ Sınav Soruları — 23–32"
+          },
+          {
+            "num": "S29",
+            "title": "Vize / Final — Soru 29",
+            "link": "https://youtu.be/EbusWOi-C8E",
+            "subgroup": "③ Sınav Soruları — 23–32"
+          },
+          {
+            "num": "S30",
+            "title": "Vize / Final — Soru 30",
+            "link": "https://youtu.be/YOHgGUDv88I",
+            "subgroup": "③ Sınav Soruları — 23–32"
+          },
+          {
+            "num": "S31",
+            "title": "Vize / Final — Soru 31",
+            "link": "https://youtu.be/WCAmxu7C5c0",
+            "subgroup": "③ Sınav Soruları — 23–32"
+          },
+          {
+            "num": "S32",
+            "title": "Vize / Final — Soru 32",
+            "link": "https://youtu.be/3_2yA2VkGIA",
+            "subgroup": "③ Sınav Soruları — 23–32"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "group": "Vektörler & Uzay Geometri",
+    "topics": [
+      {
+        "title": "Vektörler",
+        "sub": "Vectors",
+        "href": "vektorler.html",
+        "url": "https://www.buders.com/altsayfa/vektorler.html",
+        "videos": [
+          {
+            "num": "01",
+            "title": "Vektör Nedir?",
+            "link": "https://youtu.be/W9QpjZip0h8",
+            "subgroup": ""
+          },
+          {
+            "num": "02",
+            "title": "Vektörlerin Uzunluğunu Bulma ve Birim Vektör",
+            "link": "https://youtu.be/_IC55Jh1ahQ",
+            "subgroup": ""
+          },
+          {
+            "num": "03",
+            "title": "Birim Vektör Olmayan Vektörü Birim Vektör Yapma",
+            "link": "https://youtu.be/ejtCUEIAtGU",
+            "subgroup": ""
+          },
+          {
+            "num": "04",
+            "title": "Birim Baz Vektörler",
+            "link": "https://youtu.be/Cs_xzlFPCnM",
+            "subgroup": ""
+          },
+          {
+            "num": "05",
+            "title": "İç Çarpım",
+            "link": "https://youtu.be/JsB-XP0V3PE",
+            "subgroup": ""
+          },
+          {
+            "num": "06",
+            "title": "İki Vektörün Diklik ve Paralellik Şartı",
+            "link": "https://youtu.be/5acvbAKtHMw",
+            "subgroup": ""
+          },
+          {
+            "num": "07",
+            "title": "İki Vektör Arasındaki Açıyı Bulma",
+            "link": "https://youtu.be/vnqHRiVJqZA",
+            "subgroup": ""
+          },
+          {
+            "num": "08",
+            "title": "İki Vektör Arasındaki Uzaklık",
+            "link": "https://youtu.be/-zB6ssp_hvI",
+            "subgroup": ""
+          },
+          {
+            "num": "09",
+            "title": "Dik İzdüşüm Vektörünü Bulma",
+            "link": "https://youtu.be/TR_h4Rs4T-4",
+            "subgroup": ""
+          },
+          {
+            "num": "10",
+            "title": "Düzlemde Üçgenin Alanını Vektör ile Bulma",
+            "link": "https://youtu.be/cXtwBoBwPb4",
+            "subgroup": ""
+          },
+          {
+            "num": "11",
+            "title": "Vektörel Çarpım",
+            "link": "https://youtu.be/QaaqS8oTl6E",
+            "subgroup": ""
+          },
+          {
+            "num": "12",
+            "title": "Uzayda Üçgenin Alanını Vektör ile Bulma",
+            "link": "https://youtu.be/P9DqtFMglfY",
+            "subgroup": ""
+          },
+          {
+            "num": "13",
+            "title": "Uzayda Paralelkenar Alanını Vektör ile Bulma",
+            "link": "https://youtu.be/xfEfSQQ6yEA",
+            "subgroup": ""
+          },
+          {
+            "num": "14",
+            "title": "Üçlü Vektörel Çarpım",
+            "link": "https://youtu.be/IYiz44BlhIw",
+            "subgroup": ""
+          },
+          {
+            "num": "15",
+            "title": "Üç Ayrıtını Oluşturan Vektörler Bilinen Prizmanın Hacmi",
+            "link": "https://youtu.be/Kij9mEYyX-Y",
+            "subgroup": ""
+          },
+          {
+            "num": "16",
+            "title": "Köşe Koordinatları Bilinen Dörtyüzlünün Hacmi",
+            "link": "https://youtu.be/rh_xKtERUoo",
+            "subgroup": ""
+          },
+          {
+            "num": "17",
+            "title": "Üç Vektörün Aynı Düzlem Üzerinde Olup Olmadığını Belirleme",
+            "link": "https://youtu.be/PHAz2QXdR3w",
+            "subgroup": ""
+          },
+          {
+            "num": "S1",
+            "title": "Vektörler — Soru 1",
+            "link": "https://youtu.be/hexKoJUtkgw",
+            "subgroup": ""
+          },
+          {
+            "num": "S2",
+            "title": "Vektörler — Soru 2",
+            "link": "https://youtu.be/zwi5Y3A7aEM",
+            "subgroup": ""
+          },
+          {
+            "num": "S3",
+            "title": "Vektörler — Soru 3",
+            "link": "https://youtu.be/xEWR6N3lppo",
+            "subgroup": ""
+          },
+          {
+            "num": "S4",
+            "title": "Vektörler — Soru 4",
+            "link": "https://youtu.be/7oBPs9H6iFM",
+            "subgroup": ""
+          },
+          {
+            "num": "S5",
+            "title": "Vektörler — Soru 5",
+            "link": "https://youtu.be/Z_ElTrQ4EHQ",
+            "subgroup": ""
+          },
+          {
+            "num": "S6",
+            "title": "Vektörler — Soru 6",
+            "link": "https://youtu.be/koRx8gP8MFA",
+            "subgroup": ""
+          },
+          {
+            "num": "S7",
+            "title": "Vektörler — Soru 7",
+            "link": "https://youtu.be/35_a7hv4Ioo",
+            "subgroup": ""
+          },
+          {
+            "num": "S8",
+            "title": "Vektörler — Soru 8",
+            "link": "https://youtu.be/j7wcqdXi0OQ",
+            "subgroup": ""
+          },
+          {
+            "num": "S9",
+            "title": "Vektörler — Soru 9",
+            "link": "https://youtu.be/ItK5vzfCV2M",
+            "subgroup": ""
+          },
+          {
+            "num": "S10",
+            "title": "Vektörler — Soru 10",
+            "link": "https://youtu.be/ZhqggtRQqZw",
+            "subgroup": ""
+          },
+          {
+            "num": "S11",
+            "title": "Vektörler — Soru 11",
+            "link": "https://youtu.be/SueiBJ8ue-Y",
+            "subgroup": ""
+          }
+        ]
+      },
+      {
+        "title": "Uzay Geometri",
+        "sub": "3D Geometry",
+        "href": "uzay_geometri.html",
+        "url": "https://www.buders.com/altsayfa/uzay_geometri.html",
+        "videos": [
+          {
+            "num": "01",
+            "title": "Uzayda Doğru Denklemini Yazma",
+            "link": "https://youtu.be/kaP9IHWcpXU",
+            "subgroup": ""
+          },
+          {
+            "num": "02",
+            "title": "Düzlem Denklemi Yazma",
+            "link": "https://youtu.be/DP2wWoUXPxM",
+            "subgroup": ""
+          },
+          {
+            "num": "03",
+            "title": "Düzlemin Parametrik Denklemi",
+            "link": "https://youtu.be/H8Z203SF2tc",
+            "subgroup": ""
+          },
+          {
+            "num": "04",
+            "title": "Üç Noktası Verilen Düzlem Denklemini Yazma",
+            "link": "https://youtu.be/iT4NHMXD6d8",
+            "subgroup": ""
+          },
+          {
+            "num": "05",
+            "title": "Uzayda Bir Noktanın Bir Doğruya Olan Uzaklığı",
+            "link": "https://youtu.be/phWFQBuw6cI",
+            "subgroup": ""
+          },
+          {
+            "num": "06",
+            "title": "Bir Noktanın Bir Düzleme Olan Uzaklığı",
+            "link": "https://youtu.be/7ndUnUD2ncs",
+            "subgroup": ""
+          },
+          {
+            "num": "07",
+            "title": "Uzayda İki Doğru Arasındaki Açı",
+            "link": "https://youtu.be/z4qpx9FVCtw",
+            "subgroup": ""
+          },
+          {
+            "num": "08",
+            "title": "İki Düzlem Arasındaki Açı",
+            "link": "https://youtu.be/KnIdlrpWR5A",
+            "subgroup": ""
+          },
+          {
+            "num": "09",
+            "title": "Uzayda Bir Doğru ile Düzlem Arasındaki Açı",
+            "link": "https://youtu.be/OTwrtlCy3X0",
+            "subgroup": ""
+          },
+          {
+            "num": "10",
+            "title": "Uzayda Doğruların Birbirine Göre Durumları",
+            "link": "https://youtu.be/NcOFCWvWKyY",
+            "subgroup": ""
+          },
+          {
+            "num": "11",
+            "title": "İki Düzlemin Birbirine Göre Durumları",
+            "link": "https://youtu.be/UhIOkUBdf4Y",
+            "subgroup": ""
+          },
+          {
+            "num": "12",
+            "title": "Uzayda Bir Doğru ile Bir Düzlemin Birbirine Göre Durumları",
+            "link": "https://youtu.be/U99ZMz1WE88",
+            "subgroup": ""
+          },
+          {
+            "num": "13",
+            "title": "Uzayda Bir Doğru ile Bir Düzlemin Kesişme Noktasını Bulma",
+            "link": "https://youtu.be/vIporcd49Wg",
+            "subgroup": ""
+          },
+          {
+            "num": "14",
+            "title": "Uzayda İki Doğrunun Kesişme Noktasını Bulma",
+            "link": "https://youtu.be/LfXo9JnZ_6k",
+            "subgroup": ""
+          },
+          {
+            "num": "15",
+            "title": "İki Düzlemin Kesişme Noktalarının Oluşturduğu Doğru Denklemi",
+            "link": "https://youtu.be/VrbhWSKKSqc",
+            "subgroup": ""
+          },
+          {
+            "num": "16",
+            "title": "Bir Düzlemin Dışındaki Bir Noktaya En Yakın Noktasını Bulma",
+            "link": "https://youtu.be/_4_U_JfN2uI",
+            "subgroup": ""
+          },
+          {
+            "num": "17",
+            "title": "Bir Doğrunun Dışındaki Bir Noktaya En Yakın Noktasını Bulma",
+            "link": "https://youtu.be/nGWxX6d8oLM",
+            "subgroup": ""
+          },
+          {
+            "num": "S1",
+            "title": "Uzay Geometri — Soru 1",
+            "link": "https://youtu.be/b0anLx7kEmM",
+            "subgroup": ""
+          },
+          {
+            "num": "S2",
+            "title": "Uzay Geometri — Soru 2",
+            "link": "https://youtu.be/XiHRp2Rqfj4",
+            "subgroup": ""
+          },
+          {
+            "num": "S3",
+            "title": "Uzay Geometri — Soru 3",
+            "link": "https://youtu.be/iRz3tbKdt6w",
+            "subgroup": ""
+          },
+          {
+            "num": "S4",
+            "title": "Uzay Geometri — Soru 4",
+            "link": "https://youtu.be/btPKSb-tu6U",
+            "subgroup": ""
+          },
+          {
+            "num": "S5",
+            "title": "Uzay Geometri — Soru 5",
+            "link": "https://youtu.be/zF2OJVouA-E",
+            "subgroup": ""
+          },
+          {
+            "num": "S6",
+            "title": "Uzay Geometri — Soru 6",
+            "link": "https://youtu.be/-ImUQt41FdY",
+            "subgroup": ""
+          },
+          {
+            "num": "S7",
+            "title": "Uzay Geometri — Soru 7",
+            "link": "https://youtu.be/GuNPnKKlaWU",
+            "subgroup": ""
+          }
+        ]
+      },
+      {
+        "title": "Vektör Değerli Fonksiyonlar",
+        "sub": "Vector Valued Functions",
+        "href": "vector_degerli_fonksiyonlar.html",
+        "url": "https://www.buders.com/altsayfa/vector_degerli_fonksiyonlar.html",
+        "videos": [
+          {
+            "num": "01",
+            "title": "Vektör Değerli Fonksiyon Nedir?",
+            "link": "https://youtu.be/ZgGhErZG6tU",
+            "subgroup": ""
+          },
+          {
+            "num": "02",
+            "title": "Vektör Değerli Fonksiyonların Tanım Kümesini Bulma",
+            "link": "https://youtu.be/oTgvv67fus4",
+            "subgroup": ""
+          },
+          {
+            "num": "03",
+            "title": "Vektör Değerli Fonksiyonların Limiti",
+            "link": "https://youtu.be/IU980LZ01L8",
+            "subgroup": ""
+          },
+          {
+            "num": "04",
+            "title": "Vektör Değerli Fonksiyonların Türevi",
+            "link": "https://youtu.be/k65_UpHpECE",
+            "subgroup": ""
+          },
+          {
+            "num": "05",
+            "title": "Vektör Değerli Fonksiyonların İntegrali",
+            "link": "https://youtu.be/PcOeq4l4uZA",
+            "subgroup": ""
+          },
+          {
+            "num": "06",
+            "title": "Teğet Vektör ve Birim Teğet Vektör",
+            "link": "https://youtu.be/KuclhbLOplU",
+            "subgroup": ""
+          },
+          {
+            "num": "07",
+            "title": "Normal Vektör ve Birim Normal Vektör",
+            "link": "https://youtu.be/MYfSj23pCKk",
+            "subgroup": ""
+          },
+          {
+            "num": "08",
+            "title": "İkinci Dik Vektör (Binormal)",
+            "link": "https://youtu.be/l9z5v5DrtX0",
+            "subgroup": ""
+          },
+          {
+            "num": "09",
+            "title": "Vektör Değerli Fonksiyonlarda Yay Uzunluğu",
+            "link": "https://youtu.be/7CnJD6OgR8I",
+            "subgroup": ""
+          },
+          {
+            "num": "10",
+            "title": "Eğrilik",
+            "link": "https://youtu.be/qNDLGmsQvfU",
+            "subgroup": ""
+          },
+          {
+            "num": "11",
+            "title": "Burulma (Torsion)",
+            "link": "burulma_torsion.html",
+            "subgroup": ""
+          },
+          {
+            "num": "S1",
+            "title": "Vektör Değerli Fonksiyonlar — Soru 1",
+            "link": "https://youtu.be/5mDFLEnyJ0I",
+            "subgroup": ""
+          },
+          {
+            "num": "S2",
+            "title": "Vektör Değerli Fonksiyonlar — Soru 2",
+            "link": "https://youtu.be/AeUBrhq3Flg",
+            "subgroup": ""
+          },
+          {
+            "num": "S3",
+            "title": "Vektör Değerli Fonksiyonlar — Soru 3",
+            "link": "https://youtu.be/e29pGwGM0sY",
+            "subgroup": ""
+          },
+          {
+            "num": "S4",
+            "title": "Vektör Değerli Fonksiyonlar — Soru 4",
+            "link": "https://youtu.be/7wtrgddyNJg",
+            "subgroup": ""
+          },
+          {
+            "num": "S5",
+            "title": "Vektör Değerli Fonksiyonlar — Soru 5",
+            "link": "https://youtu.be/kjFb_sXh6rM",
+            "subgroup": ""
+          },
+          {
+            "num": "S6",
+            "title": "Vektör Değerli Fonksiyonlar — Soru 6",
+            "link": "https://youtu.be/EFTMIotlAEo",
+            "subgroup": ""
+          },
+          {
+            "num": "S7",
+            "title": "Vektör Değerli Fonksiyonlar — Soru 7",
+            "link": "https://youtu.be/MPpZFmD8JK0",
+            "subgroup": ""
+          },
+          {
+            "num": "S8",
+            "title": "Vektör Değerli Fonksiyonlar — Soru 8",
+            "link": "https://youtu.be/tWt-XnAWf4c",
+            "subgroup": ""
+          },
+          {
+            "num": "S9",
+            "title": "Vektör Değerli Fonksiyonlar — Soru 9",
+            "link": "https://youtu.be/zs_r-1UKxmI",
+            "subgroup": ""
+          },
+          {
+            "num": "S10",
+            "title": "Vektör Değerli Fonksiyonlar — Soru 10",
+            "link": "https://youtu.be/k59kZLgheKM",
+            "subgroup": ""
+          },
+          {
+            "num": "S11",
+            "title": "Vektör Değerli Fonksiyonlar — Soru 11",
+            "link": "https://youtu.be/tgKeI1uNbSw",
+            "subgroup": ""
+          }
+        ]
+      },
+      {
+        "title": "Parametrik Eğriler",
+        "sub": "Parametric Curves",
+        "href": "parametrik_egriler.html",
+        "url": "https://www.buders.com/altsayfa/parametrik_egriler.html",
+        "videos": [
+          {
+            "num": "01",
+            "title": "Parametrik Eğriler (Parametrik Denklemler)",
+            "link": "https://youtu.be/furguQeqjyk",
+            "subgroup": ""
+          },
+          {
+            "num": "S1",
+            "title": "Parametrik Eğriler — Soru 1",
+            "link": "https://youtu.be/CqZZkhCysG0",
+            "subgroup": ""
+          },
+          {
+            "num": "S2",
+            "title": "Parametrik Eğriler — Soru 2",
+            "link": "https://youtu.be/wQZHZRM5cIk",
+            "subgroup": ""
+          },
+          {
+            "num": "S3",
+            "title": "Parametrik Eğriler — Soru 3",
+            "link": "https://youtu.be/7noRYUrTITc",
+            "subgroup": ""
+          },
+          {
+            "num": "S4",
+            "title": "Parametrik Eğriler — Soru 4",
+            "link": "https://youtu.be/BVDecOjloAc",
+            "subgroup": ""
+          },
+          {
+            "num": "S5",
+            "title": "Parametrik Eğriler — Soru 5",
+            "link": "https://youtu.be/lyVC7WhOSNQ",
+            "subgroup": ""
+          },
+          {
+            "num": "S6",
+            "title": "Parametrik Eğriler — Soru 6",
+            "link": "https://youtu.be/X3P73IYzveI",
+            "subgroup": ""
+          },
+          {
+            "num": "C1",
+            "title": "Calculus with Parametric Curves — Soru 1",
+            "link": "https://youtu.be/pPy3P7_GMbk",
+            "subgroup": ""
+          },
+          {
+            "num": "C2",
+            "title": "Calculus with Parametric Curves — Soru 2",
+            "link": "https://youtu.be/PHNcckCnEYY",
+            "subgroup": ""
+          },
+          {
+            "num": "C3",
+            "title": "Calculus with Parametric Curves — Soru 3",
+            "link": "https://youtu.be/_g-gPTwmFJQ",
+            "subgroup": ""
+          }
+        ]
+      },
+      {
+        "title": "Kutupsal Koordinatlar ve Uygulamaları",
+        "sub": "",
+        "href": "kutupsal_koordinatlar.html",
+        "url": "https://www.buders.com/altsayfa/kutupsal_koordinatlar.html",
+        "videos": [
+          {
+            "num": "01",
+            "title": "Kutupsal Koordinatlar Nedir?",
+            "link": "https://youtu.be/gISmBTNmjzY",
+            "subgroup": ""
+          },
+          {
+            "num": "02",
+            "title": "Kartezyen Denklemleri Kutupsal Denklemlere Çevirme",
+            "link": "https://youtu.be/DlKltmUUv7U",
+            "subgroup": ""
+          },
+          {
+            "num": "03",
+            "title": "Kutupsal Denklemleri Kartezyen Denklemlere Çevirme",
+            "link": "https://youtu.be/em3MmgzlhYc",
+            "subgroup": ""
+          },
+          {
+            "num": "04",
+            "title": "Kutupsal Koordinatlarda Türev",
+            "link": "https://youtu.be/J8vbuRAE8u0",
+            "subgroup": ""
+          },
+          {
+            "num": "05",
+            "title": "Kutupsal Koordinatlarda Teğet Doğru Denklemi Bulma",
+            "link": "https://youtu.be/McxsVdfwaAA",
+            "subgroup": ""
+          },
+          {
+            "num": "06",
+            "title": "Kutupsal Teğet Doğru — Soru 1",
+            "link": "https://youtu.be/ChNks3GHxY4",
+            "subgroup": ""
+          },
+          {
+            "num": "07",
+            "title": "Kutupsal Teğet Doğru — Soru 2",
+            "link": "https://youtu.be/XnAiT4AmfbA",
+            "subgroup": ""
+          },
+          {
+            "num": "08",
+            "title": "Kardioid Nedir ve Nasıl Çizilir?",
+            "link": "https://youtu.be/djfJvslgD1I",
+            "subgroup": ""
+          },
+          {
+            "num": "09",
+            "title": "Çember Belirten Kutupsal Eğrilerin Grafiğini Çizme",
+            "link": "https://youtu.be/z2pvFPhdFYE",
+            "subgroup": ""
+          },
+          {
+            "num": "10",
+            "title": "Kutupsal Koordinatlarda Alan Hesaplama",
+            "link": "https://youtu.be/cjmANSHQDIk",
+            "subgroup": ""
+          },
+          {
+            "num": "11",
+            "title": "Kardioid Alanı Hesaplama — Soru 1",
+            "link": "https://youtu.be/bBO3Z1qDusQ",
+            "subgroup": ""
+          },
+          {
+            "num": "12",
+            "title": "Kardioid Alanı Hesaplama — Soru 2",
+            "link": "https://youtu.be/CQLS5yMoMdk",
+            "subgroup": ""
+          },
+          {
+            "num": "13",
+            "title": "Kardioid Alanı Hesaplama — Soru 3",
+            "link": "https://youtu.be/2p4fl1GAxBI",
+            "subgroup": ""
+          },
+          {
+            "num": "14",
+            "title": "Kardioid Alanı Hesaplama — Soru 4",
+            "link": "https://youtu.be/7tl-Z3wKN3s",
+            "subgroup": ""
+          },
+          {
+            "num": "15",
+            "title": "Kardioid Alanı Hesaplama — Soru 5",
+            "link": "https://youtu.be/opnOunX1kLY",
+            "subgroup": ""
+          },
+          {
+            "num": "16",
+            "title": "Kardioid Alanı Hesaplama — Soru 6",
+            "link": "https://youtu.be/Hzkj3SmCAXE",
+            "subgroup": ""
+          },
+          {
+            "num": "17",
+            "title": "İç Döngü İçeren Kutupsal Eğrilerin Çizimi — Soru 1",
+            "link": "https://youtu.be/KQEvY_FAz8o",
+            "subgroup": ""
+          },
+          {
+            "num": "18",
+            "title": "İç Döngü İçeren Kutupsal Eğrilerin Çizimi — Soru 2",
+            "link": "https://youtu.be/46lKsvls3Sw",
+            "subgroup": ""
+          },
+          {
+            "num": "19",
+            "title": "Kutupsal Eğrilerde İç Döngünün Alanını Hesaplama",
+            "link": "https://youtu.be/rgQl2ZHToqM",
+            "subgroup": ""
+          },
+          {
+            "num": "20",
+            "title": "Kutupsal Eğrilerde Alan — Soru 1",
+            "link": "https://youtu.be/coc6yYU4mLQ",
+            "subgroup": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "group": "Çok Değişkenli Fonksiyonlar",
+    "topics": [
+      {
+        "title": "Çok Değişkenli Fonksiyonlar",
+        "sub": "Multivariable Functions",
+        "href": "cok_degiskenli_fonksiyonlar.html",
+        "url": "https://www.buders.com/altsayfa/cok_degiskenli_fonksiyonlar.html",
+        "videos": [
+          {
+            "num": "01",
+            "title": "Çok Değişkenli Fonksiyon Nedir?",
+            "link": "https://youtu.be/V1Egr4ZlJOk",
+            "subgroup": ""
+          },
+          {
+            "num": "02",
+            "title": "Tanım Kümesi (Domain) Bulma",
+            "link": "https://youtu.be/m0zOwGWyNhs",
+            "subgroup": ""
+          },
+          {
+            "num": "D1",
+            "title": "Domain Bulma — Soru 1",
+            "link": "https://youtu.be/4ZDlVXY9daI",
+            "subgroup": ""
+          },
+          {
+            "num": "D2",
+            "title": "Domain Bulma — Soru 2",
+            "link": "https://youtu.be/DZXjeQLkYTM",
+            "subgroup": ""
+          },
+          {
+            "num": "D3",
+            "title": "Domain Bulma — Soru 3",
+            "link": "https://youtu.be/CghwvnT1R6E",
+            "subgroup": ""
+          },
+          {
+            "num": "D4",
+            "title": "Domain Bulma — Soru 4",
+            "link": "https://youtu.be/71xNfqwFT90",
+            "subgroup": ""
+          },
+          {
+            "num": "07",
+            "title": "Çok Değişkenli Fonksiyonlarda Görüntü Kümesi Bulma",
+            "link": "https://youtu.be/yyjpN403D8Y",
+            "subgroup": ""
+          },
+          {
+            "num": "08",
+            "title": "Seviye Eğrileri",
+            "link": "https://youtu.be/YAlKf7DfJ20",
+            "subgroup": ""
+          },
+          {
+            "num": "L1",
+            "title": "Seviye Eğrileri — Soru 1",
+            "link": "https://youtu.be/Va8S8gIjyGw",
+            "subgroup": ""
+          },
+          {
+            "num": "L2",
+            "title": "Seviye Eğrileri — Soru 2",
+            "link": "https://youtu.be/fyx38E4vYN4",
+            "subgroup": ""
+          }
+        ]
+      },
+      {
+        "title": "İkinci Derece Yüzeyler (Kuadrik Yüzeyler)",
+        "sub": "",
+        "href": "kuadrik_yuzeyler.html",
+        "url": "https://www.buders.com/altsayfa/kuadrik_yuzeyler.html",
+        "videos": [
+          {
+            "num": "01",
+            "title": "İkinci Derece Yüzeyler (Kuadrik Yüzeyler)",
+            "link": "https://youtu.be/4jDYTvTM7lk",
+            "subgroup": ""
+          },
+          {
+            "num": "02",
+            "title": "Küre",
+            "link": "https://youtu.be/lXQceNax9TU",
+            "subgroup": ""
+          },
+          {
+            "num": "03",
+            "title": "Silindir",
+            "link": "https://youtu.be/_FmpHe61bZ8",
+            "subgroup": ""
+          },
+          {
+            "num": "04",
+            "title": "Elipsoid",
+            "link": "https://youtu.be/32jfX09iB7Y",
+            "subgroup": ""
+          },
+          {
+            "num": "05",
+            "title": "Tek Yapraklı Hiperboloid",
+            "link": "https://youtu.be/tYZGRmjY6Q4",
+            "subgroup": ""
+          },
+          {
+            "num": "06",
+            "title": "İki Yapraklı Hiperboloid",
+            "link": "https://youtu.be/m9khQRdvvtY",
+            "subgroup": ""
+          },
+          {
+            "num": "07",
+            "title": "Eliptik Koni",
+            "link": "https://youtu.be/J2MXATLu-d4",
+            "subgroup": ""
+          },
+          {
+            "num": "08",
+            "title": "Eliptik Paraboloid",
+            "link": "https://youtu.be/fZ53FIxvHk4",
+            "subgroup": ""
+          },
+          {
+            "num": "09",
+            "title": "Hiperbolik Paraboloid",
+            "link": "https://youtu.be/UWt9CUcLLO8",
+            "subgroup": ""
+          },
+          {
+            "num": "S1",
+            "title": "Kuadrik Yüzeyler — Soru 1",
+            "link": "https://youtu.be/iIKCkE_NxMI",
+            "subgroup": ""
+          },
+          {
+            "num": "S2",
+            "title": "Kuadrik Yüzeyler — Soru 2",
+            "link": "https://youtu.be/EL3d-XP29uw",
+            "subgroup": ""
+          },
+          {
+            "num": "S3",
+            "title": "Kuadrik Yüzeyler — Soru 3",
+            "link": "https://youtu.be/weCE9XWJals",
+            "subgroup": ""
+          },
+          {
+            "num": "S4",
+            "title": "Kuadrik Yüzeyler — Soru 4",
+            "link": "https://youtu.be/6O__0SFWALE",
+            "subgroup": ""
+          },
+          {
+            "num": "S5",
+            "title": "Kuadrik Yüzeyler — Soru 5",
+            "link": "https://youtu.be/P9dt7pd3Mrg",
+            "subgroup": ""
+          },
+          {
+            "num": "S6",
+            "title": "Kuadrik Yüzeyler — Soru 6",
+            "link": "https://youtu.be/tusf8tpYGLI",
+            "subgroup": ""
+          }
+        ]
+      },
+      {
+        "title": "Çok Değişkenli Fonksiyonlarda Limit",
+        "sub": "",
+        "href": "cok_degiskenli_fonksiyonlarda_limit.html",
+        "url": "https://www.buders.com/altsayfa/cok_degiskenli_fonksiyonlarda_limit.html",
+        "videos": [
+          {
+            "num": "01",
+            "title": "Çok Değişkenli Fonksiyonlarda Limit",
+            "link": "https://youtu.be/DMBaNrikfCY",
+            "subgroup": ""
+          },
+          {
+            "num": "02",
+            "title": "Fonksiyon Gibi Davranan Çok Değişkenli Limitler",
+            "link": "https://youtu.be/gpn5sjowZi8",
+            "subgroup": ""
+          },
+          {
+            "num": "03",
+            "title": "0/0 Belirsizliğinden Çarpanlara Ayırma ile Kurtulma",
+            "link": "https://youtu.be/t4KY8vCkfvc",
+            "subgroup": ""
+          },
+          {
+            "num": "04",
+            "title": "0/0 Belirsizliğinden Eşlenik Çarpımı ile Kurtulma",
+            "link": "https://youtu.be/-vv1RsIYDI8",
+            "subgroup": ""
+          },
+          {
+            "num": "05",
+            "title": "0/0 Belirsizliğinde Kutupsal Dönüşüm Yöntemi",
+            "link": "https://youtu.be/trDUdKDh_zk",
+            "subgroup": ""
+          },
+          {
+            "num": "06",
+            "title": "0/0 Belirsizliğinde Limitin Var Olmadığını İspatlama",
+            "link": "https://youtu.be/AIujORL2jJQ",
+            "subgroup": ""
+          },
+          {
+            "num": "07",
+            "title": "y = mx Kullanarak Limitin Var Olmadığını Gösterme",
+            "link": "https://youtu.be/ZRx3Y0dbbtE",
+            "subgroup": ""
+          },
+          {
+            "num": "08",
+            "title": "Sıkıştırma Teoremi",
+            "link": "https://youtu.be/dVweyJxewCE",
+            "subgroup": ""
+          },
+          {
+            "num": "09",
+            "title": "Sıkıştırma Teoremi — Soru 1",
+            "link": "https://youtu.be/IokH0S-yFtE",
+            "subgroup": ""
+          },
+          {
+            "num": "10",
+            "title": "ε-δ ile Limitin Var Olduğunu İspatlama",
+            "link": "https://youtu.be/ONPKoUgIhSk",
+            "subgroup": ""
+          },
+          {
+            "num": "11",
+            "title": "Epsilon-Delta — Soru 1",
+            "link": "https://youtu.be/CYWYYjAMZ60",
+            "subgroup": ""
+          },
+          {
+            "num": "12",
+            "title": "Epsilon-Delta — Soru 2",
+            "link": "https://youtu.be/jch__iS_gRM",
+            "subgroup": ""
+          },
+          {
+            "num": "S1",
+            "title": "Çok Değişkenli Limit — Soru 1",
+            "link": "https://youtu.be/9W9gv0Swd1Y",
+            "subgroup": ""
+          },
+          {
+            "num": "S2",
+            "title": "Çok Değişkenli Limit — Soru 2",
+            "link": "https://youtu.be/5ZE3BE-ScXc",
+            "subgroup": ""
+          },
+          {
+            "num": "S3",
+            "title": "Çok Değişkenli Limit — Soru 3",
+            "link": "https://youtu.be/-BCBRCMMiUM",
+            "subgroup": ""
+          },
+          {
+            "num": "S4",
+            "title": "Çok Değişkenli Limit — Soru 4",
+            "link": "https://youtu.be/owtbgqogKuI",
+            "subgroup": ""
+          },
+          {
+            "num": "S5",
+            "title": "Çok Değişkenli Limit — Soru 5",
+            "link": "https://youtu.be/xYLSRE4rFvc",
+            "subgroup": ""
+          },
+          {
+            "num": "S6",
+            "title": "Çok Değişkenli Limit — Soru 6",
+            "link": "https://youtu.be/6rd95ntbu3I",
+            "subgroup": ""
+          },
+          {
+            "num": "S7",
+            "title": "Çok Değişkenli Limit — Soru 7",
+            "link": "https://youtu.be/QNj6xrFmktg",
+            "subgroup": ""
+          },
+          {
+            "num": "P1",
+            "title": "Kutupsal Dönüşüm — Soru 1",
+            "link": "https://youtu.be/Gs9AJabvi_Q",
+            "subgroup": ""
+          },
+          {
+            "num": "P2",
+            "title": "Kutupsal Dönüşüm — Soru 2",
+            "link": "https://youtu.be/WcI_T8DrW1Y",
+            "subgroup": ""
+          },
+          {
+            "num": "P3",
+            "title": "Kutupsal Dönüşüm — Soru 3",
+            "link": "https://youtu.be/7i17OrWGovc",
+            "subgroup": ""
+          }
+        ]
+      },
+      {
+        "title": "Çok Değişkenli Fonksiyonlarda Süreklilik",
+        "sub": "",
+        "href": "cok_degiskenli_fonksiyonlarda_sureklilik.html",
+        "url": "https://www.buders.com/altsayfa/cok_degiskenli_fonksiyonlarda_sureklilik.html",
+        "videos": [
+          {
+            "num": "01",
+            "title": "Çok Değişkenli Fonksiyonlarda Süreklilik",
+            "link": "https://youtu.be/RyEGZxAetFU",
+            "subgroup": "Konu Anlatımı & Örnek Sorular"
+          },
+          {
+            "num": "S1",
+            "title": "Süreklilik — Soru 1",
+            "link": "https://youtu.be/Q1CRUB4-3UU",
+            "subgroup": "Konu Anlatımı & Örnek Sorular"
+          },
+          {
+            "num": "S2",
+            "title": "Süreklilik — Soru 2",
+            "link": "https://youtu.be/bQ9gVL-qXXs",
+            "subgroup": "Konu Anlatımı & Örnek Sorular"
+          }
+        ]
+      },
+      {
+        "title": "Kısmi Türev",
+        "sub": "Partial Derivatives",
+        "href": "kismi_turev.html",
+        "url": "https://www.buders.com/altsayfa/kismi_turev.html",
+        "videos": [
+          {
+            "num": "01",
+            "title": "Kısmi Türev",
+            "link": "https://youtu.be/E1P0psEV7TM",
+            "subgroup": ""
+          },
+          {
+            "num": "02",
+            "title": "Kısmi Türevin Geometrik Yorumu",
+            "link": "https://youtu.be/Ddct-Fzms_0",
+            "subgroup": ""
+          },
+          {
+            "num": "03",
+            "title": "Kısmi Türev — Soru 1",
+            "link": "https://youtu.be/lAjj623iFF0",
+            "subgroup": ""
+          },
+          {
+            "num": "04",
+            "title": "Kısmi Türevde Limit Tanım Kuralları",
+            "link": "https://youtu.be/MzUg-JSQlcg",
+            "subgroup": ""
+          },
+          {
+            "num": "05",
+            "title": "Limit Tanım Kuralları — Soru 1",
+            "link": "https://youtu.be/Y05zooGxHhA",
+            "subgroup": ""
+          },
+          {
+            "num": "06",
+            "title": "Limit Tanım Kuralları — Soru 2",
+            "link": "https://youtu.be/NLztOSg7me4",
+            "subgroup": ""
+          },
+          {
+            "num": "07",
+            "title": "Parçalı Fonksiyonlarda Kısmi Türev — Soru 1",
+            "link": "https://youtu.be/8NV9Ab3iA-E",
+            "subgroup": ""
+          },
+          {
+            "num": "08",
+            "title": "Parçalı Fonksiyonlarda Kısmi Türev — Soru 2",
+            "link": "https://youtu.be/MFFkSzby77I",
+            "subgroup": ""
+          },
+          {
+            "num": "09",
+            "title": "Toplam Diferansiyel",
+            "link": "https://youtu.be/oqFE5TofMko",
+            "subgroup": ""
+          },
+          {
+            "num": "10",
+            "title": "Toplam Diferansiyel — Soru 1",
+            "link": "https://youtu.be/rvnXBCRSnXA",
+            "subgroup": ""
+          },
+          {
+            "num": "11",
+            "title": "Toplam Diferansiyel — Soru 2",
+            "link": "https://youtu.be/2RRN-QlDDDg",
+            "subgroup": ""
+          },
+          {
+            "num": "12",
+            "title": "Kısmi Türevde Zincir Kuralı",
+            "link": "https://youtu.be/F13ypBH4h6o",
+            "subgroup": ""
+          },
+          {
+            "num": "13",
+            "title": "Zincir Kuralı — Soru 1",
+            "link": "https://youtu.be/qR7YEVWjRO4",
+            "subgroup": ""
+          },
+          {
+            "num": "14",
+            "title": "Zincir Kuralı — Soru 2",
+            "link": "https://youtu.be/qbWcxOBQO0E",
+            "subgroup": ""
+          },
+          {
+            "num": "15",
+            "title": "Zincir Kuralı — Soru 3",
+            "link": "https://youtu.be/IGeLFVMlzNs",
+            "subgroup": ""
+          },
+          {
+            "num": "16",
+            "title": "Zincir Kuralı — Soru 4",
+            "link": "https://youtu.be/hq3mcLmY_1M",
+            "subgroup": ""
+          },
+          {
+            "num": "17",
+            "title": "Kısmi Türevde Kapalı Fonksiyon Türevi",
+            "link": "https://youtu.be/0zXtByj8Meg",
+            "subgroup": ""
+          }
+        ]
+      },
+      {
+        "title": "Gradyan Vektör ve Yönlü Türev",
+        "sub": "",
+        "href": "gradyan_vektor_ve_yonlu_turev.html",
+        "url": "https://www.buders.com/altsayfa/gradyan_vektor_ve_yonlu_turev.html",
+        "videos": [
+          {
+            "num": "01",
+            "title": "Gradyan Vektörü",
+            "link": "https://youtu.be/FsgaCDfcETs",
+            "subgroup": ""
+          },
+          {
+            "num": "02",
+            "title": "Yönlü Türev",
+            "link": "https://youtu.be/p62_BWxo5LM",
+            "subgroup": ""
+          },
+          {
+            "num": "03",
+            "title": "Maksimum ve Minimum Yönlü Türev",
+            "link": "https://youtu.be/7qXTG2ZC40A",
+            "subgroup": ""
+          },
+          {
+            "num": "S1",
+            "title": "Yönlü Türev — Soru 1",
+            "link": "https://youtu.be/r0_Sv4bgvf0",
+            "subgroup": ""
+          },
+          {
+            "num": "S2",
+            "title": "Yönlü Türev — Soru 2",
+            "link": "https://youtu.be/p8x6mhtdZDI",
+            "subgroup": ""
+          }
+        ]
+      },
+      {
+        "title": "Teğet Düzlem ve Normal Doğru",
+        "sub": "",
+        "href": "teget_duzlem_ve_normal_dogru.html",
+        "url": "https://www.buders.com/altsayfa/teget_duzlem_ve_normal_dogru.html",
+        "videos": [
+          {
+            "num": "01",
+            "title": "Bir Yüzeye Teğet Düzlem Denklemini Bulma",
+            "link": "https://youtu.be/SomYsqDMTsA",
+            "subgroup": ""
+          },
+          {
+            "num": "02",
+            "title": "Bir Yüzeye Normal Doğru Denklemini Bulma",
+            "link": "https://youtu.be/ZIXIZ6uQTNo",
+            "subgroup": ""
+          },
+          {
+            "num": "03",
+            "title": "Lineer Yaklaşım Fonksiyonu Bulma",
+            "link": "https://youtu.be/o21U6XrKdHU",
+            "subgroup": ""
+          },
+          {
+            "num": "04",
+            "title": "Diferansiyel Yaklaşımı ile Yaklaşık Değer Hesaplama",
+            "link": "https://youtu.be/6frBpF-ABgo",
+            "subgroup": ""
+          },
+          {
+            "num": "S1",
+            "title": "Diferansiyel Yaklaşımı — Soru 1",
+            "link": "https://youtu.be/kq4Cjpy8AMA",
+            "subgroup": ""
+          },
+          {
+            "num": "S2",
+            "title": "Diferansiyel Yaklaşımı — Soru 2",
+            "link": "https://youtu.be/dXYAnB5I00E",
+            "subgroup": ""
+          }
+        ]
+      },
+      {
+        "title": "Çok Değişkenli Fonksiyonlarda Ekstremum Noktalar",
+        "sub": "",
+        "href": "cok_degiskenli_fonksiyonlarda_ekstremum_noktalar.html",
+        "url": "https://www.buders.com/altsayfa/cok_degiskenli_fonksiyonlarda_ekstremum_noktalar.html",
+        "videos": [
+          {
+            "num": "01",
+            "title": "Yerel Maksimum, Yerel Minimum ve Eyer Noktalarını Bulma",
+            "link": "https://youtu.be/zOBSIk5yV6U",
+            "subgroup": ""
+          },
+          {
+            "num": "02",
+            "title": "Yerel Max, Min ve Eyer Noktası — Soru 1",
+            "link": "https://youtu.be/hrD7wGANBHk",
+            "subgroup": ""
+          },
+          {
+            "num": "03",
+            "title": "Yerel Max, Min ve Eyer Noktası — Soru 2",
+            "link": "https://youtu.be/cFn0APjygqU",
+            "subgroup": ""
+          },
+          {
+            "num": "04",
+            "title": "Yerel Max, Min ve Eyer Noktası — Soru 3",
+            "link": "https://youtu.be/iTGIrR2xW0A",
+            "subgroup": ""
+          },
+          {
+            "num": "05",
+            "title": "Hesse Matrisi",
+            "link": "https://youtu.be/sodt4vIrhzs",
+            "subgroup": ""
+          },
+          {
+            "num": "06",
+            "title": "Hesse Matrisi ile Optimizasyon",
+            "link": "https://youtu.be/OYaFzl9BeHA",
+            "subgroup": ""
+          },
+          {
+            "num": "07",
+            "title": "Hesse Matrisi ile Optimizasyon — Soru 1",
+            "link": "https://youtu.be/HVDSJfGSiGY",
+            "subgroup": ""
+          },
+          {
+            "num": "08",
+            "title": "Hesse Matrisi ile Optimizasyon — Soru 2",
+            "link": "https://youtu.be/xC0q6drmpJs",
+            "subgroup": ""
+          },
+          {
+            "num": "09",
+            "title": "Hesse Matrisi ile Optimizasyon — Soru 3",
+            "link": "https://youtu.be/HY_Sgsb4tr4",
+            "subgroup": ""
+          },
+          {
+            "num": "10",
+            "title": "Mutlak Maksimum ve Minimum Bulma",
+            "link": "https://youtu.be/5nDUUpXcots",
+            "subgroup": ""
+          },
+          {
+            "num": "11",
+            "title": "Mutlak Max ve Min — Soru 1",
+            "link": "https://youtu.be/0ncQSst1YG8",
+            "subgroup": ""
+          },
+          {
+            "num": "12",
+            "title": "Mutlak Max ve Min — Soru 2",
+            "link": "https://youtu.be/TgKUhBKo0bg",
+            "subgroup": ""
+          },
+          {
+            "num": "13",
+            "title": "Mutlak Max ve Min — Soru 3",
+            "link": "https://youtu.be/-VRN8qs1QLM",
+            "subgroup": ""
+          },
+          {
+            "num": "14",
+            "title": "Lagrange Çarpanı Metodu",
+            "link": "https://youtu.be/WchFhYD6YWA",
+            "subgroup": ""
+          },
+          {
+            "num": "L1",
+            "title": "Lagrange Çarpanı — Soru 1",
+            "link": "https://youtu.be/n5gxKQo_13k",
+            "subgroup": ""
+          },
+          {
+            "num": "L2",
+            "title": "Lagrange Çarpanı — Soru 2",
+            "link": "https://youtu.be/soGWZVX2PoM",
+            "subgroup": ""
+          },
+          {
+            "num": "L3",
+            "title": "Lagrange Çarpanı — Soru 3",
+            "link": "https://youtu.be/A8xfG6IZXi8",
+            "subgroup": ""
+          },
+          {
+            "num": "L4",
+            "title": "Lagrange Çarpanı — Soru 4",
+            "link": "https://youtu.be/3rK6KRl3lp4",
+            "subgroup": ""
+          },
+          {
+            "num": "L5",
+            "title": "Lagrange Çarpanı — Soru 5",
+            "link": "https://youtu.be/weFgHcfVSkY",
+            "subgroup": ""
+          },
+          {
+            "num": "L6",
+            "title": "Lagrange Çarpanı — Soru 6",
+            "link": "https://youtu.be/hBsyzgQFIYI",
+            "subgroup": ""
+          },
+          {
+            "num": "15",
+            "title": "Lagrange Çarpanı Metodu Konu Anlatım Fasikülü",
+            "link": "lagrange_fasikul.html",
+            "subgroup": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "group": "Çok Katlı İntegraller",
+    "topics": [
+      {
+        "title": "İki Katlı İntegraller",
+        "sub": "Double Integrals",
+        "href": "iki_katli_integral.html",
+        "url": "https://www.buders.com/altsayfa/iki_katli_integral.html",
+        "videos": [
+          {
+            "num": "01",
+            "title": "Çift Katlı İntegral Nedir ve Neyi Hesaplar?",
+            "link": "https://youtu.be/0GebnSN7Obo",
+            "subgroup": ""
+          },
+          {
+            "num": "02",
+            "title": "Sınırları Verilmiş Çift Katlı İntegralleri Hesaplama",
+            "link": "https://youtu.be/G2TqwCO_Q2U",
+            "subgroup": ""
+          },
+          {
+            "num": "03",
+            "title": "Çift Katlı İntegralde Sınır Belirleme",
+            "link": "https://youtu.be/ajAe-BV0CFE",
+            "subgroup": ""
+          },
+          {
+            "num": "04",
+            "title": "Sınır Belirleme — Örnek Sorular",
+            "link": "https://youtu.be/oSVJwtEt6q0",
+            "subgroup": ""
+          },
+          {
+            "num": "05",
+            "title": "İntegral Alma Sırasını Değiştirme",
+            "link": "https://youtu.be/t1zi6vFd0p8",
+            "subgroup": ""
+          },
+          {
+            "num": "06",
+            "title": "Sıra Değiştirme — Soru 1",
+            "link": "https://youtu.be/26Lx6Em4oXw",
+            "subgroup": ""
+          },
+          {
+            "num": "07",
+            "title": "Sıra Değiştirme — Soru 2",
+            "link": "https://youtu.be/uR99a6ippD0",
+            "subgroup": ""
+          },
+          {
+            "num": "08",
+            "title": "Çift Katlı İntegral ile Alan Hesaplama",
+            "link": "https://youtu.be/6RHaY_OaE5c",
+            "subgroup": ""
+          },
+          {
+            "num": "09",
+            "title": "Alan Hesaplama — Soru 1",
+            "link": "https://youtu.be/MYFbGMwUPgA",
+            "subgroup": ""
+          },
+          {
+            "num": "10",
+            "title": "Alan Hesaplama — Soru 2",
+            "link": "https://youtu.be/jtBLbiOIy6c",
+            "subgroup": ""
+          },
+          {
+            "num": "11",
+            "title": "Alan Hesaplama — Soru 3",
+            "link": "https://youtu.be/IcuY-hIgObU",
+            "subgroup": ""
+          },
+          {
+            "num": "12",
+            "title": "Ortalama Değer Hesaplama",
+            "link": "https://youtu.be/XtdHgLJO8xQ",
+            "subgroup": ""
+          },
+          {
+            "num": "13",
+            "title": "Ortalama Değer — Soru 1",
+            "link": "https://youtu.be/Dwz197dbeaQ",
+            "subgroup": ""
+          },
+          {
+            "num": "14",
+            "title": "Kutupsal Koordinatlara Dönüştürerek Çözme",
+            "link": "https://youtu.be/l28c5vWxcJI",
+            "subgroup": ""
+          },
+          {
+            "num": "15",
+            "title": "Merkezi Orijin Olmayan Çember — Kutupsal Dönüşüm",
+            "link": "https://youtu.be/PV3Dnj7xHBI",
+            "subgroup": ""
+          },
+          {
+            "num": "P1",
+            "title": "Kutupsal Koordinatlar — Soru 1",
+            "link": "https://youtu.be/ikQovhZw3Qk",
+            "subgroup": ""
+          },
+          {
+            "num": "P2",
+            "title": "Kutupsal Koordinatlar — Soru 2",
+            "link": "https://youtu.be/b35HK06A5MA",
+            "subgroup": ""
+          },
+          {
+            "num": "P3",
+            "title": "Kutupsal Koordinatlar — Soru 3",
+            "link": "https://youtu.be/KwVhTmIG_xI",
+            "subgroup": ""
+          },
+          {
+            "num": "P4",
+            "title": "Kutupsal Koordinatlar — Soru 4",
+            "link": "https://youtu.be/wavvDubgLSA",
+            "subgroup": ""
+          },
+          {
+            "num": "P5",
+            "title": "Kutupsal Koordinatlar — Soru 5",
+            "link": "https://youtu.be/zy6lySpvp6k",
+            "subgroup": ""
+          },
+          {
+            "num": "P6",
+            "title": "Kutupsal Koordinatlar — Soru 6",
+            "link": "https://youtu.be/-XR-UmLKc0Y",
+            "subgroup": ""
+          },
+          {
+            "num": "P7",
+            "title": "Kutupsal Koordinatlar — Soru 7",
+            "link": "https://youtu.be/P9bsarOYrfM",
+            "subgroup": ""
+          },
+          {
+            "num": "P8",
+            "title": "Kutupsal Koordinatlar — Soru 8",
+            "link": "https://youtu.be/M_EzFvJxiMM",
+            "subgroup": ""
+          },
+          {
+            "num": "24",
+            "title": "Değişken Değiştirme",
+            "link": "https://youtu.be/Cn_TxegAAG8",
+            "subgroup": ""
+          },
+          {
+            "num": "J1",
+            "title": "Değişken Değiştirme — Soru 1",
+            "link": "https://youtu.be/IJcb4YWDyw4",
+            "subgroup": ""
+          },
+          {
+            "num": "J2",
+            "title": "Değişken Değiştirme — Soru 2",
+            "link": "https://youtu.be/sldVpKjbdhw",
+            "subgroup": ""
+          },
+          {
+            "num": "J3",
+            "title": "Değişken Değiştirme — Soru 3",
+            "link": "https://youtu.be/25O9RKIctHo",
+            "subgroup": ""
+          },
+          {
+            "num": "28",
+            "title": "İntegral Alma Bölgesi Elips Olan Çift Katlı İntegraller",
+            "link": "https://youtu.be/qgGE1Vnl2ic",
+            "subgroup": ""
+          },
+          {
+            "num": "29",
+            "title": "Elips Bölgesi — İngilizce Örnek Soru",
+            "link": "https://youtu.be/95bUwVRnoh0",
+            "subgroup": ""
+          },
+          {
+            "num": "30",
+            "title": "Yoğunluk Fonksiyonundan Kütle Hesaplama",
+            "link": "https://youtu.be/Ohx4sewTk8w",
+            "subgroup": ""
+          },
+          {
+            "num": "31",
+            "title": "Kütle Hesaplama — Soru 1",
+            "link": "https://youtu.be/XOnYstjvqFk",
+            "subgroup": ""
+          },
+          {
+            "num": "32",
+            "title": "Kütle Hesaplama — İngilizce Soru",
+            "link": "https://youtu.be/us26_djxgmw",
+            "subgroup": ""
+          },
+          {
+            "num": "33",
+            "title": "Yoğunluk Fonksiyonundan Momentleri Hesaplama",
+            "link": "https://youtu.be/qv5R5QbtpZg",
+            "subgroup": ""
+          },
+          {
+            "num": "34",
+            "title": "Moment Hesaplama — Soru 1",
+            "link": "https://youtu.be/GQ7I4WToTF4",
+            "subgroup": ""
+          },
+          {
+            "num": "35",
+            "title": "Ağırlık Merkezini Bulma",
+            "link": "https://youtu.be/Fe09AEDWXME",
+            "subgroup": ""
+          },
+          {
+            "num": "36",
+            "title": "Ağırlık Merkezi — Soru 1",
+            "link": "https://youtu.be/U7McBbnKV5E",
+            "subgroup": ""
+          },
+          {
+            "num": "37",
+            "title": "Homojen Yoğunlukta Ağırlık Merkezi",
+            "link": "https://youtu.be/eINXfwR5fTc",
+            "subgroup": ""
+          },
+          {
+            "num": "S01",
+            "title": "Çift Katlı İntegral — Soru 1",
+            "link": "https://youtu.be/B-5rz1m2Nps",
+            "subgroup": ""
+          },
+          {
+            "num": "S02",
+            "title": "Çift Katlı İntegral — Soru 2",
+            "link": "https://youtu.be/cB4Mo039gsw",
+            "subgroup": ""
+          },
+          {
+            "num": "S03",
+            "title": "Çift Katlı İntegral — Soru 3",
+            "link": "https://youtu.be/VeO39G_C8sg",
+            "subgroup": ""
+          },
+          {
+            "num": "S04",
+            "title": "Çift Katlı İntegral — Soru 4",
+            "link": "https://youtu.be/do5lvKTBJuY",
+            "subgroup": ""
+          },
+          {
+            "num": "S05",
+            "title": "Çift Katlı İntegral — Soru 5",
+            "link": "https://youtu.be/3LIsDkd1ZRw",
+            "subgroup": ""
+          },
+          {
+            "num": "S06",
+            "title": "Çift Katlı İntegral — Soru 6",
+            "link": "https://youtu.be/w6mhczrEAH0",
+            "subgroup": ""
+          },
+          {
+            "num": "S07",
+            "title": "Çift Katlı İntegral — Soru 7",
+            "link": "https://youtu.be/v4bbfK98-2A",
+            "subgroup": ""
+          },
+          {
+            "num": "S08",
+            "title": "Çift Katlı İntegral — Soru 8",
+            "link": "https://youtu.be/lIpD9r_1oA4",
+            "subgroup": ""
+          },
+          {
+            "num": "S09",
+            "title": "Çift Katlı İntegral — Soru 9",
+            "link": "https://youtu.be/U7VvpydzrHg",
+            "subgroup": ""
+          },
+          {
+            "num": "S10",
+            "title": "Çift Katlı İntegral — Soru 10",
+            "link": "https://youtu.be/gRoyBXcMT5Y",
+            "subgroup": ""
+          },
+          {
+            "num": "S11",
+            "title": "Çift Katlı İntegral — Soru 11",
+            "link": "https://youtu.be/Y1bO8yRyDAA",
+            "subgroup": ""
+          },
+          {
+            "num": "S12",
+            "title": "Çift Katlı İntegral — Soru 12",
+            "link": "https://youtu.be/VTfGtI6T-w8",
+            "subgroup": ""
+          },
+          {
+            "num": "S13",
+            "title": "Çift Katlı İntegral — Soru 13",
+            "link": "https://youtu.be/6nrnNjlS9PI",
+            "subgroup": ""
+          },
+          {
+            "num": "S14",
+            "title": "Çift Katlı İntegral — Soru 14",
+            "link": "https://youtu.be/t9AN__B5DfI",
+            "subgroup": ""
+          },
+          {
+            "num": "S15",
+            "title": "Çift Katlı İntegral — Soru 15",
+            "link": "https://youtu.be/VPddAeBE1jY",
+            "subgroup": ""
+          },
+          {
+            "num": "S16",
+            "title": "Çift Katlı İntegral — Soru 16",
+            "link": "https://youtu.be/Q3fKT-LIUyI",
+            "subgroup": ""
+          },
+          {
+            "num": "S17",
+            "title": "Çift Katlı İntegral — Soru 17",
+            "link": "https://youtu.be/aEpTU1ukVQE",
+            "subgroup": ""
+          },
+          {
+            "num": "S18",
+            "title": "Çift Katlı İntegral — Soru 18",
+            "link": "https://youtu.be/eHJ8C6ICUbY",
+            "subgroup": ""
+          },
+          {
+            "num": "S19",
+            "title": "Çift Katlı İntegral — Soru 19",
+            "link": "https://youtu.be/gbEDRSniDCY",
+            "subgroup": ""
+          },
+          {
+            "num": "S20",
+            "title": "Çift Katlı İntegral — Soru 20",
+            "link": "https://youtu.be/DR7aYZtqy-w",
+            "subgroup": ""
+          }
+        ]
+      },
+      {
+        "title": "Jakobiyen",
+        "sub": "Jacobian",
+        "href": "jacobian.html",
+        "url": "https://www.buders.com/altsayfa/jacobian.html",
+        "videos": []
+      },
+      {
+        "title": "Kartezyen, Silindirik ve Küresel Koordinatlar",
+        "sub": "",
+        "href": "kartezyen_silindirik_kuresel_koordinatlar.html",
+        "url": "https://www.buders.com/altsayfa/kartezyen_silindirik_kuresel_koordinatlar.html",
+        "videos": [
+          {
+            "num": "01",
+            "title": "Kartezyen → Silindirik Koordinatlara Dönüştürme",
+            "link": "https://youtu.be/u69yOGW8AKE",
+            "subgroup": ""
+          },
+          {
+            "num": "02",
+            "title": "Fonksiyonları Silindirik Koordinatlara Dönüştürme",
+            "link": "https://youtu.be/GCbUcu_erdo",
+            "subgroup": ""
+          },
+          {
+            "num": "03",
+            "title": "Kartezyen → Küresel Koordinatlara Dönüştürme",
+            "link": "https://youtu.be/rZVP6-T3xEE",
+            "subgroup": ""
+          },
+          {
+            "num": "04",
+            "title": "Fonksiyonları Küresel Koordinatlara Dönüştürme",
+            "link": "https://youtu.be/IcKSNOIv6GM",
+            "subgroup": ""
+          },
+          {
+            "num": "S1",
+            "title": "Kartezyen, Silindirik &amp; Küresel — Soru 1",
+            "link": "https://youtu.be/hSZyvswuKTQ",
+            "subgroup": ""
+          },
+          {
+            "num": "S2",
+            "title": "Kartezyen, Silindirik &amp; Küresel — Soru 2",
+            "link": "https://youtu.be/CN9EIN37_hw",
+            "subgroup": ""
+          },
+          {
+            "num": "S3",
+            "title": "Kartezyen, Silindirik &amp; Küresel — Soru 3",
+            "link": "https://youtu.be/PRDQpTQnN0c",
+            "subgroup": ""
+          },
+          {
+            "num": "S4",
+            "title": "Kartezyen, Silindirik &amp; Küresel — Soru 4",
+            "link": "https://youtu.be/JhQfd3mu8E8",
+            "subgroup": ""
+          }
+        ]
+      },
+      {
+        "title": "Koordinat Dönüşümlerinde Kısmi Türev",
+        "sub": "",
+        "href": "kutupsal_silindirik_kureselde_kismi_turev.html",
+        "url": "https://www.buders.com/altsayfa/kutupsal_silindirik_kureselde_kismi_turev.html",
+        "videos": []
+      },
+      {
+        "title": "Üç Katlı İntegraller",
+        "sub": "Triple Integrals",
+        "href": "uc_katli_integral.html",
+        "url": "https://www.buders.com/altsayfa/uc_katli_integral.html",
+        "videos": [
+          {
+            "num": "01",
+            "title": "Üç Katlı İntegral Neyi Hesaplar?",
+            "link": "https://youtu.be/kM4U2Lyr3N0",
+            "subgroup": ""
+          },
+          {
+            "num": "02",
+            "title": "Sınırları Verilmiş Üç Katlı İntegralleri Hesaplama",
+            "link": "https://youtu.be/8aGTGtpqrmE",
+            "subgroup": ""
+          },
+          {
+            "num": "03",
+            "title": "Bilinmesi Gereken Grafik Çizimleri",
+            "link": "https://youtu.be/rlydXwmbJTY",
+            "subgroup": ""
+          },
+          {
+            "num": "04",
+            "title": "Üç Katlı İntegralde Sınır Belirleme",
+            "link": "https://youtu.be/NKprMVm1sRI",
+            "subgroup": ""
+          },
+          {
+            "num": "05",
+            "title": "Sonsuz Hacimsel Bölgede Üç Katlı İntegral",
+            "link": "https://youtu.be/PaLjS10NFmw",
+            "subgroup": ""
+          },
+          {
+            "num": "06",
+            "title": "Silindirik Koordinatlar",
+            "link": "https://youtu.be/4M_7oYJ27_Y",
+            "subgroup": ""
+          },
+          {
+            "num": "C1",
+            "title": "Silindirik Koordinatlar — Soru 1",
+            "link": "https://youtu.be/I3-Jt92CbXA",
+            "subgroup": ""
+          },
+          {
+            "num": "C2",
+            "title": "Silindirik Koordinatlar — Soru 2",
+            "link": "https://youtu.be/hA9hYFVBQWI",
+            "subgroup": ""
+          },
+          {
+            "num": "C3",
+            "title": "Silindirik Koordinatlar — Soru 3",
+            "link": "https://youtu.be/uYtfusbAunE",
+            "subgroup": ""
+          },
+          {
+            "num": "10",
+            "title": "Küresel Koordinatlar",
+            "link": "https://youtu.be/nhk8ed_rIaY",
+            "subgroup": ""
+          },
+          {
+            "num": "K1",
+            "title": "Küresel Koordinatlar — Soru 1",
+            "link": "https://youtu.be/RcnbYXk1UMY",
+            "subgroup": ""
+          },
+          {
+            "num": "K2",
+            "title": "Küresel Koordinatlar — Soru 2",
+            "link": "https://youtu.be/C5FGSWU_UgQ",
+            "subgroup": ""
+          },
+          {
+            "num": "K3",
+            "title": "Küresel Koordinatlar — Soru 3",
+            "link": "https://youtu.be/7tMmo70E6q0",
+            "subgroup": ""
+          },
+          {
+            "num": "14",
+            "title": "Tüm Uzay — Küresel Koordinatlarda Hesaplama",
+            "link": "https://youtu.be/vi5OP9fbJOs",
+            "subgroup": ""
+          },
+          {
+            "num": "15",
+            "title": "Sıra Değiştirme",
+            "link": "https://youtu.be/rxE4-GVWGAE",
+            "subgroup": ""
+          },
+          {
+            "num": "16",
+            "title": "Sıra Değiştirme — Soru 1",
+            "link": "https://youtu.be/AnBWbHlKwec",
+            "subgroup": ""
+          },
+          {
+            "num": "17",
+            "title": "Sıra Değiştirme — Soru 2",
+            "link": "https://youtu.be/abZkVedax9s",
+            "subgroup": ""
+          },
+          {
+            "num": "18",
+            "title": "Yoğunluk Fonksiyonundan Kütle Hesaplama",
+            "link": "https://youtu.be/2omz7NuptOE",
+            "subgroup": ""
+          },
+          {
+            "num": "19",
+            "title": "Yoğunluk Fonksiyonundan Momentleri Hesaplama",
+            "link": "https://youtu.be/Do7PTlTjwak",
+            "subgroup": ""
+          },
+          {
+            "num": "20",
+            "title": "Yoğunluk Fonksiyonundan Ağırlık Merkezini Hesaplama",
+            "link": "https://youtu.be/SmXRVoMv8Dc",
+            "subgroup": ""
+          },
+          {
+            "num": "S01",
+            "title": "Üç Katlı İntegral — Soru 1",
+            "link": "https://youtu.be/nG8G5LIbQ7Q",
+            "subgroup": ""
+          },
+          {
+            "num": "S02",
+            "title": "Üç Katlı İntegral — Soru 2",
+            "link": "https://youtu.be/OKr9fRNfXAU",
+            "subgroup": ""
+          },
+          {
+            "num": "S03",
+            "title": "Üç Katlı İntegral — Soru 3",
+            "link": "https://youtu.be/RPfn_olFjyw",
+            "subgroup": ""
+          },
+          {
+            "num": "S04",
+            "title": "Üç Katlı İntegral — Soru 4",
+            "link": "https://youtu.be/m6LPErKtZr4",
+            "subgroup": ""
+          },
+          {
+            "num": "S05",
+            "title": "Üç Katlı İntegral — Soru 5",
+            "link": "https://youtu.be/sNGSi4cWvZY",
+            "subgroup": ""
+          },
+          {
+            "num": "S06",
+            "title": "Üç Katlı İntegral — Soru 6",
+            "link": "https://youtu.be/qFeSuRwyGKU",
+            "subgroup": ""
+          },
+          {
+            "num": "S07",
+            "title": "Üç Katlı İntegral — Soru 7",
+            "link": "https://youtu.be/oQ40c8YuPVA",
+            "subgroup": ""
+          },
+          {
+            "num": "S08",
+            "title": "Üç Katlı İntegral — Soru 8",
+            "link": "https://youtu.be/oqoEhVDq_0s",
+            "subgroup": ""
+          },
+          {
+            "num": "S09",
+            "title": "Üç Katlı İntegral — Soru 9",
+            "link": "https://youtu.be/ODVG-G34B7Q",
+            "subgroup": ""
+          },
+          {
+            "num": "S10",
+            "title": "Üç Katlı İntegral — Soru 10",
+            "link": "https://youtu.be/o3TcxVXvnNk",
+            "subgroup": ""
+          },
+          {
+            "num": "E1",
+            "title": "İngilizce Soru 1",
+            "link": "https://youtu.be/kRJFfJ7e2Ws",
+            "subgroup": ""
+          },
+          {
+            "num": "E2",
+            "title": "İngilizce Soru 2",
+            "link": "https://youtu.be/Hn52pFsL8vM",
+            "subgroup": ""
+          },
+          {
+            "num": "E3",
+            "title": "İngilizce Soru 3",
+            "link": "https://youtu.be/GwqlwZYWm7U",
+            "subgroup": ""
+          }
+        ]
+      },
+      {
+        "title": "Eğrisel İntegraller",
+        "sub": "Line Integrals",
+        "href": "egrisel_integraller.html",
+        "url": "https://www.buders.com/altsayfa/egrisel_integraller.html",
+        "videos": [
+          {
+            "num": "01",
+            "title": "Vektör Alanı Nedir?",
+            "link": "https://youtu.be/IHXNjV1Uli0",
+            "subgroup": ""
+          },
+          {
+            "num": "02",
+            "title": "Gradyan Vektör Alanı",
+            "link": "https://youtu.be/el9qmQs-sy0",
+            "subgroup": ""
+          },
+          {
+            "num": "03",
+            "title": "Çizgi İntegrali (Eğrisel İntegral) Nedir?",
+            "link": "https://youtu.be/O1AR1K6FYu0",
+            "subgroup": ""
+          },
+          {
+            "num": "04",
+            "title": "Parametrize Etme Kuralları",
+            "link": "https://youtu.be/1U5uSI_JZaA",
+            "subgroup": ""
+          },
+          {
+            "num": "05",
+            "title": "Çizgi İntegral Çeşitleri",
+            "link": "https://youtu.be/ninWdQJibyY",
+            "subgroup": ""
+          },
+          {
+            "num": "06",
+            "title": "Yay Uzunluğuna Göre Çizgi İntegrali",
+            "link": "https://youtu.be/7spkZmpqueQ",
+            "subgroup": ""
+          },
+          {
+            "num": "07",
+            "title": "Yay Uzunluğuna Göre — Soru 1",
+            "link": "https://youtu.be/d9jWjmLjm5w",
+            "subgroup": ""
+          },
+          {
+            "num": "08",
+            "title": "Yay Uzunluğuna Göre — Soru 2",
+            "link": "https://youtu.be/Y2kLb-Q8F7I",
+            "subgroup": ""
+          },
+          {
+            "num": "09",
+            "title": "Yay Uzunluğuna Göre — Soru 3",
+            "link": "https://youtu.be/T-rWyv1aeOA",
+            "subgroup": ""
+          },
+          {
+            "num": "10",
+            "title": "x, y ve z Eksenlerine Göre Çizgi İntegrali",
+            "link": "https://youtu.be/JgTryr7z2RQ",
+            "subgroup": ""
+          },
+          {
+            "num": "11",
+            "title": "Eksenlere Göre — Soru 1",
+            "link": "https://youtu.be/v0sCyXaAbqg",
+            "subgroup": ""
+          },
+          {
+            "num": "12",
+            "title": "Eksenlere Göre — Soru 2",
+            "link": "https://youtu.be/7ViZIAWMS0M",
+            "subgroup": ""
+          },
+          {
+            "num": "13",
+            "title": "Eksenlere Göre — Soru 3",
+            "link": "https://youtu.be/lViPwHO-K-M",
+            "subgroup": ""
+          },
+          {
+            "num": "14",
+            "title": "Vektör Alanlarının Çizgi İntegralini Hesaplama",
+            "link": "https://youtu.be/pmSTkhhbvnU",
+            "subgroup": ""
+          },
+          {
+            "num": "15",
+            "title": "Vektör Alanı İntegrali — Soru 1",
+            "link": "https://youtu.be/xg_ZyST2kI0",
+            "subgroup": ""
+          },
+          {
+            "num": "16",
+            "title": "Vektör Alanı İntegrali — Soru 2",
+            "link": "https://youtu.be/3EH1AotTfmA",
+            "subgroup": ""
+          },
+          {
+            "num": "17",
+            "title": "Vektör Alanı İntegrali — Soru 3",
+            "link": "https://youtu.be/eCjgIiNExeQ",
+            "subgroup": ""
+          },
+          {
+            "num": "18",
+            "title": "Tutarlı (Conservative) Vektör Alanı",
+            "link": "https://youtu.be/I4L3KC2vj5k",
+            "subgroup": ""
+          },
+          {
+            "num": "19",
+            "title": "Potansiyel Fonksiyon Bulma",
+            "link": "https://youtu.be/-XOb7HC_N5A",
+            "subgroup": ""
+          },
+          {
+            "num": "20",
+            "title": "Potansiyel Fonksiyon — Soru 1",
+            "link": "https://youtu.be/pYpwGX2l3Ao",
+            "subgroup": ""
+          },
+          {
+            "num": "21",
+            "title": "Potansiyel Fonksiyon — Soru 2",
+            "link": "https://youtu.be/QcHRDUUlXiA",
+            "subgroup": ""
+          },
+          {
+            "num": "22",
+            "title": "Potansiyel Fonksiyon — Soru 3",
+            "link": "https://youtu.be/lm_SxhhOVsg",
+            "subgroup": ""
+          },
+          {
+            "num": "23",
+            "title": "Potansiyel Fonksiyon ile Çizgi İntegrali",
+            "link": "https://youtu.be/hZX1kMc2STc",
+            "subgroup": ""
+          },
+          {
+            "num": "24",
+            "title": "Potansiyel Fonksiyon ile İntegral — Soru 1",
+            "link": "https://youtu.be/DW1-TQVFPAU",
+            "subgroup": ""
+          },
+          {
+            "num": "25",
+            "title": "Potansiyel Fonksiyon ile İntegral — Soru 2",
+            "link": "https://youtu.be/Pu3D2jgZBho",
+            "subgroup": ""
+          },
+          {
+            "num": "26",
+            "title": "Çizgi İntegralde İş Hesaplama",
+            "link": "https://youtu.be/BQqExGmA230",
+            "subgroup": ""
+          },
+          {
+            "num": "W1",
+            "title": "İş Hesaplama — Soru 1",
+            "link": "https://youtu.be/_VSzWHf8oec",
+            "subgroup": ""
+          },
+          {
+            "num": "W2",
+            "title": "İş Hesaplama — Soru 2",
+            "link": "https://youtu.be/HQx8nViDijY",
+            "subgroup": ""
+          },
+          {
+            "num": "W3",
+            "title": "İş Hesaplama — Soru 3",
+            "link": "https://youtu.be/nWt49jOWqzU",
+            "subgroup": ""
+          },
+          {
+            "num": "W4",
+            "title": "İş Hesaplama — Soru 4",
+            "link": "https://youtu.be/aC-IQTG7Ljk",
+            "subgroup": ""
+          },
+          {
+            "num": "31",
+            "title": "Green Teoremi",
+            "link": "https://youtu.be/lGgv2TJAv5A",
+            "subgroup": ""
+          },
+          {
+            "num": "G1",
+            "title": "Green Teoremi — Soru 1",
+            "link": "https://youtu.be/UB1swN1flDQ",
+            "subgroup": ""
+          },
+          {
+            "num": "G2",
+            "title": "Green Teoremi — Soru 2",
+            "link": "https://youtu.be/6Q2yOA9j5V4",
+            "subgroup": ""
+          },
+          {
+            "num": "G3",
+            "title": "Green Teoremi — Soru 3",
+            "link": "https://youtu.be/Ayy7cn70h_U",
+            "subgroup": ""
+          },
+          {
+            "num": "G4",
+            "title": "Green Teoremi — Soru 4 (İngilizce)",
+            "link": "https://youtu.be/VtADsELQVyQ",
+            "subgroup": ""
+          },
+          {
+            "num": "G5",
+            "title": "Green Teoremi — Soru 5 (İngilizce)",
+            "link": "https://youtu.be/6HdcRFFdRtM",
+            "subgroup": ""
+          },
+          {
+            "num": "G6",
+            "title": "Green Teoremi — Soru 6 (İngilizce)",
+            "link": "https://youtu.be/sa9ETVnudLo",
+            "subgroup": ""
+          },
+          {
+            "num": "38",
+            "title": "Green Teoremi ile Alan Hesaplama",
+            "link": "https://youtu.be/31Ka3z1qR00",
+            "subgroup": ""
+          },
+          {
+            "num": "A1",
+            "title": "Green ile Alan — Soru 1",
+            "link": "https://youtu.be/-ioIrBB8uLQ",
+            "subgroup": ""
+          },
+          {
+            "num": "A2",
+            "title": "Green ile Alan — Soru 2",
+            "link": "https://youtu.be/14FkaSTKVIk",
+            "subgroup": ""
+          }
+        ]
+      },
+      {
+        "title": "Yüzey İntegralleri",
+        "sub": "Surface Integrals",
+        "href": "yuzey_integralleri.html",
+        "url": "https://www.buders.com/altsayfa/yuzey_integralleri.html",
+        "videos": [
+          {
+            "num": "01",
+            "title": "Yüzey İntegrallerine Giriş",
+            "link": "https://youtu.be/tw9va890urE",
+            "subgroup": ""
+          },
+          {
+            "num": "02",
+            "title": "Vektör Alanlarının Curl ve Diverjansını Bulma",
+            "link": "https://youtu.be/qggQVwZRmZs",
+            "subgroup": ""
+          },
+          {
+            "num": "03",
+            "title": "Curl ve Diverjans — Soru 1",
+            "link": "https://youtu.be/D6rVMNcRtYs",
+            "subgroup": ""
+          },
+          {
+            "num": "04",
+            "title": "Curl ve Diverjans — Soru 2",
+            "link": "https://youtu.be/M7xt0XYMfqU",
+            "subgroup": ""
+          },
+          {
+            "num": "05",
+            "title": "Yüzey Kavramı Nedir?",
+            "link": "https://youtu.be/DnLD993pt7A",
+            "subgroup": ""
+          },
+          {
+            "num": "06",
+            "title": "Yüzeylerin Parametrize Edilme Kuralları",
+            "link": "https://youtu.be/glcWHFud_Y0",
+            "subgroup": ""
+          },
+          {
+            "num": "P1",
+            "title": "Parametrizasyon — Soru 1",
+            "link": "https://youtu.be/D9gx2M_vUuw",
+            "subgroup": ""
+          },
+          {
+            "num": "P2",
+            "title": "Parametrizasyon — Soru 2",
+            "link": "https://youtu.be/ngz_xeoem8Q",
+            "subgroup": ""
+          },
+          {
+            "num": "P3",
+            "title": "Parametrizasyon — Soru 3",
+            "link": "https://youtu.be/1I5YqOMA8Dw",
+            "subgroup": ""
+          },
+          {
+            "num": "P4",
+            "title": "Parametrizasyon — Soru 4",
+            "link": "https://youtu.be/mBmsmrLr7AM",
+            "subgroup": ""
+          },
+          {
+            "num": "11",
+            "title": "Parametrik → Kartezyen Yüzey Denklemine Dönme",
+            "link": "https://youtu.be/tpb_twtYNoA",
+            "subgroup": ""
+          },
+          {
+            "num": "12",
+            "title": "Parametrik Yüzeylere Teğet Düzlem Denklemini Bulma",
+            "link": "https://youtu.be/exwP123omhI",
+            "subgroup": ""
+          },
+          {
+            "num": "13",
+            "title": "Çift Katlı İntegral ile Yüzey Alanı Hesaplama",
+            "link": "https://youtu.be/PC_KyAgVyl8",
+            "subgroup": ""
+          },
+          {
+            "num": "A1",
+            "title": "Yüzey Alanı — Soru 1",
+            "link": "https://youtu.be/RVk-m-fKmKU",
+            "subgroup": ""
+          },
+          {
+            "num": "A2",
+            "title": "Yüzey Alanı — Soru 2",
+            "link": "https://youtu.be/jxfZAwrqyNM",
+            "subgroup": ""
+          },
+          {
+            "num": "16",
+            "title": "Çok Değişkenli Fonksiyonların Yüzey İntegrali",
+            "link": "https://youtu.be/VCPXIx_C8h8",
+            "subgroup": ""
+          },
+          {
+            "num": "S1",
+            "title": "Skaler Yüzey İntegrali — Soru 1",
+            "link": "https://youtu.be/8rOSBrBjPvc",
+            "subgroup": ""
+          },
+          {
+            "num": "S2",
+            "title": "Skaler Yüzey İntegrali — Soru 2",
+            "link": "https://youtu.be/lOCUTY55CK4",
+            "subgroup": ""
+          },
+          {
+            "num": "S3",
+            "title": "Skaler Yüzey İntegrali — Soru 3",
+            "link": "https://youtu.be/XDQLKO0vtiM",
+            "subgroup": ""
+          },
+          {
+            "num": "20",
+            "title": "Vektör Alanlarının Yüzey İntegrali",
+            "link": "https://youtu.be/_Zn80xU8YMs",
+            "subgroup": ""
+          },
+          {
+            "num": "21",
+            "title": "Stokes Teoremi",
+            "link": "https://youtu.be/WMt041icfVM",
+            "subgroup": ""
+          },
+          {
+            "num": "T1",
+            "title": "Stokes Teoremi — Soru 1",
+            "link": "https://youtu.be/DwK7TLrLDJE",
+            "subgroup": ""
+          },
+          {
+            "num": "T2",
+            "title": "Stokes Teoremi — Soru 2",
+            "link": "https://youtu.be/mi8vI7ypFx8",
+            "subgroup": ""
+          },
+          {
+            "num": "24",
+            "title": "Diverjans Teoremi",
+            "link": "https://youtu.be/JLpZSBNUmy0",
+            "subgroup": ""
+          },
+          {
+            "num": "D1",
+            "title": "Diverjans Teoremi — Soru 1",
+            "link": "https://youtu.be/AnSkSxrgixg",
+            "subgroup": ""
+          },
+          {
+            "num": "D2",
+            "title": "Diverjans Teoremi — Soru 2",
+            "link": "https://youtu.be/SMAdvdkH8DM",
+            "subgroup": ""
+          },
+          {
+            "num": "D3",
+            "title": "Diverjans Teoremi — Soru 3",
+            "link": "https://youtu.be/QkoTXGlJyFo",
+            "subgroup": ""
+          },
+          {
+            "num": "D4",
+            "title": "Diverjans Teoremi — Soru 4",
+            "link": "https://youtu.be/Kl2C5BiV7Ms",
+            "subgroup": ""
+          }
+        ]
+      },
+      {
+        "title": "Diferansiyel Vektör Operatörleri",
+        "sub": "Divergence, Gradient, Curl, Laplacian",
+        "href": "diferansiyel_vektor_operatorleri.html",
+        "url": "https://www.buders.com/altsayfa/diferansiyel_vektor_operatorleri.html",
+        "videos": []
+      }
+    ]
+  },
+  {
+    "group": "Sınav Hazırlık",
+    "topics": [
+      {
+        "title": "Vize ve Finalde Çıkabilecek Sorular",
+        "sub": "",
+        "href": "vize_ve_finalde_cikabilecek_sorular_calculus_2.html",
+        "url": "https://www.buders.com/altsayfa/vize_ve_finalde_cikabilecek_sorular_calculus_2.html",
+        "videos": [
+          {
+            "num": "S01",
+            "title": "Vize ve Finalde Çıkabilecek Soru 1",
+            "link": "https://youtu.be/V4BURmnMfUg",
+            "subgroup": ""
+          },
+          {
+            "num": "S02",
+            "title": "Vize ve Finalde Çıkabilecek Soru 2",
+            "link": "https://youtu.be/FIo3h2XDa50",
+            "subgroup": ""
+          },
+          {
+            "num": "S03",
+            "title": "Vize ve Finalde Çıkabilecek Soru 3",
+            "link": "https://youtu.be/6dy7BpKYkP0",
+            "subgroup": ""
+          },
+          {
+            "num": "S04",
+            "title": "Vize ve Finalde Çıkabilecek Soru 4",
+            "link": "https://youtu.be/qZ_Pn2JSHiQ",
+            "subgroup": ""
+          },
+          {
+            "num": "S05",
+            "title": "Vize ve Finalde Çıkabilecek Soru 5",
+            "link": "https://youtu.be/K5XdSU6zlBk",
+            "subgroup": ""
+          },
+          {
+            "num": "S06",
+            "title": "Vize ve Finalde Çıkabilecek Soru 6",
+            "link": "https://youtu.be/987bEATVxiU",
+            "subgroup": ""
+          },
+          {
+            "num": "S07",
+            "title": "Vize ve Finalde Çıkabilecek Soru 7",
+            "link": "https://youtu.be/umUSE-_ZTTc",
+            "subgroup": ""
+          },
+          {
+            "num": "S08",
+            "title": "Vize ve Finalde Çıkabilecek Soru 8",
+            "link": "https://youtu.be/dqcWkBrqdD8",
+            "subgroup": ""
+          },
+          {
+            "num": "S09",
+            "title": "Vize ve Finalde Çıkabilecek Soru 9",
+            "link": "https://youtu.be/Lc6Zg6m6xEE",
+            "subgroup": ""
+          },
+          {
+            "num": "S10",
+            "title": "Vize ve Finalde Çıkabilecek Soru 10",
+            "link": "https://youtu.be/k9_rWqzbjvI",
+            "subgroup": ""
+          },
+          {
+            "num": "S11",
+            "title": "Vize ve Finalde Çıkabilecek Soru 11",
+            "link": "https://youtu.be/hwVaYPkX7ng",
+            "subgroup": ""
+          },
+          {
+            "num": "S12",
+            "title": "Vize ve Finalde Çıkabilecek Soru 12",
+            "link": "https://youtu.be/dKxc96HKdNI",
+            "subgroup": ""
+          },
+          {
+            "num": "S13",
+            "title": "Vize ve Finalde Çıkabilecek Soru 13",
+            "link": "https://youtu.be/ZHRx21mKBRU",
+            "subgroup": ""
+          },
+          {
+            "num": "S14",
+            "title": "Vize ve Finalde Çıkabilecek Soru 14",
+            "link": "https://youtu.be/WVV-yVEQQUc",
+            "subgroup": ""
+          },
+          {
+            "num": "S15",
+            "title": "Vize ve Finalde Çıkabilecek Soru 15",
+            "link": "https://youtu.be/ioXpRK9a5uY",
+            "subgroup": ""
+          },
+          {
+            "num": "S16",
+            "title": "Vize ve Finalde Çıkabilecek Soru 16",
+            "link": "https://youtu.be/4L3--zNFiEg",
+            "subgroup": ""
+          },
+          {
+            "num": "S17",
+            "title": "Vize ve Finalde Çıkabilecek Soru 17",
+            "link": "https://youtu.be/D1Y5kkrHag0",
+            "subgroup": ""
+          },
+          {
+            "num": "S18",
+            "title": "Vize ve Finalde Çıkabilecek Soru 18",
+            "link": "https://youtu.be/G-iA8tdVO-w",
+            "subgroup": ""
+          },
+          {
+            "num": "S19",
+            "title": "Vize ve Finalde Çıkabilecek Soru 19",
+            "link": "https://youtu.be/8XeAZtHiuac",
+            "subgroup": ""
+          },
+          {
+            "num": "S20",
+            "title": "Vize ve Finalde Çıkabilecek Soru 20",
+            "link": "https://youtu.be/BFA8LWxWCvY",
+            "subgroup": ""
+          },
+          {
+            "num": "S21",
+            "title": "Vize ve Finalde Çıkabilecek Soru 21",
+            "link": "https://youtu.be/-R6_fu5piGw",
+            "subgroup": ""
+          },
+          {
+            "num": "S22",
+            "title": "Vize ve Finalde Çıkabilecek Soru 22",
+            "link": "https://youtu.be/QDsc0pNO438",
+            "subgroup": ""
+          },
+          {
+            "num": "S23",
+            "title": "Vize ve Finalde Çıkabilecek Soru 23",
+            "link": "https://youtu.be/uXUaoFfiXcI",
+            "subgroup": ""
+          },
+          {
+            "num": "S24",
+            "title": "Vize ve Finalde Çıkabilecek Soru 24",
+            "link": "https://youtu.be/eDl9Jh3jtZA",
+            "subgroup": ""
+          },
+          {
+            "num": "S25",
+            "title": "Vize ve Finalde Çıkabilecek Soru 25",
+            "link": "https://youtu.be/8uIrMzMwJJY",
+            "subgroup": ""
+          },
+          {
+            "num": "S26",
+            "title": "Vize ve Finalde Çıkabilecek Soru 26",
+            "link": "https://youtu.be/Y-aKR-tRfWU",
+            "subgroup": ""
+          },
+          {
+            "num": "S27",
+            "title": "Vize ve Finalde Çıkabilecek Soru 27",
+            "link": "https://youtu.be/ogRWxO7z8OU",
+            "subgroup": ""
+          },
+          {
+            "num": "S28",
+            "title": "Vize ve Finalde Çıkabilecek Soru 28",
+            "link": "https://youtu.be/Cp24Qk5UqDQ",
+            "subgroup": ""
+          },
+          {
+            "num": "S29",
+            "title": "Vize ve Finalde Çıkabilecek Soru 29",
+            "link": "https://youtu.be/mdeu6sNpLDo",
+            "subgroup": ""
+          },
+          {
+            "num": "S30",
+            "title": "Vize ve Finalde Çıkabilecek Soru 30",
+            "link": "https://youtu.be/29QeRBKQQZ4",
+            "subgroup": ""
+          },
+          {
+            "num": "S31",
+            "title": "Vize ve Finalde Çıkabilecek Soru 31",
+            "link": "https://youtu.be/oS_2QU-HsVs",
+            "subgroup": ""
+          },
+          {
+            "num": "S32",
+            "title": "Vize ve Finalde Çıkabilecek Soru 32",
+            "link": "https://youtu.be/xpO5C1kKpzk",
+            "subgroup": ""
+          },
+          {
+            "num": "S33",
+            "title": "Vize ve Finalde Çıkabilecek Soru 33",
+            "link": "https://youtu.be/JFcj4SOSTQ0",
+            "subgroup": ""
+          },
+          {
+            "num": "S34",
+            "title": "Vize ve Finalde Çıkabilecek Soru 34",
+            "link": "https://youtu.be/2xLLksVRmyQ",
+            "subgroup": ""
+          },
+          {
+            "num": "S35",
+            "title": "Vize ve Finalde Çıkabilecek Soru 35",
+            "link": "https://youtu.be/A3C8RJGOSIA",
+            "subgroup": ""
+          },
+          {
+            "num": "S36",
+            "title": "Vize ve Finalde Çıkabilecek Soru 36",
+            "link": "https://youtu.be/W4mdAqajDxw",
+            "subgroup": ""
+          },
+          {
+            "num": "S37",
+            "title": "Vize ve Finalde Çıkabilecek Soru 37",
+            "link": "https://youtu.be/eKVj39XwzQM",
+            "subgroup": ""
+          },
+          {
+            "num": "S38",
+            "title": "Vize ve Finalde Çıkabilecek Soru 38",
+            "link": "https://youtu.be/SJ3laDRJgm4",
+            "subgroup": ""
+          },
+          {
+            "num": "S39",
+            "title": "Vize ve Finalde Çıkabilecek Soru 39",
+            "link": "https://youtu.be/vnglOIWXD2Q",
+            "subgroup": ""
+          },
+          {
+            "num": "S40",
+            "title": "Vize ve Finalde Çıkabilecek Soru 40",
+            "link": "https://youtu.be/GuDERu5S-9g",
+            "subgroup": ""
+          },
+          {
+            "num": "S41",
+            "title": "Vize ve Finalde Çıkabilecek Soru 41",
+            "link": "https://youtu.be/30N-4o7cHKU",
+            "subgroup": ""
+          },
+          {
+            "num": "S42",
+            "title": "Vize ve Finalde Çıkabilecek Soru 42",
+            "link": "https://youtu.be/cUKvyr9RMn4",
+            "subgroup": ""
+          },
+          {
+            "num": "S43",
+            "title": "Vize ve Finalde Çıkabilecek Soru 43",
+            "link": "https://youtu.be/j6_-iVLEir0",
+            "subgroup": ""
+          },
+          {
+            "num": "S44",
+            "title": "Vize ve Finalde Çıkabilecek Soru 44",
+            "link": "https://youtu.be/9uGjcbqbj_o",
+            "subgroup": ""
+          },
+          {
+            "num": "S45",
+            "title": "Vize ve Finalde Çıkabilecek Soru 45",
+            "link": "https://youtu.be/DlN3anhtp78",
+            "subgroup": ""
+          },
+          {
+            "num": "S46",
+            "title": "Vize ve Finalde Çıkabilecek Soru 46",
+            "link": "https://youtu.be/OP2EKDgrw0A",
+            "subgroup": ""
+          },
+          {
+            "num": "S47",
+            "title": "Vize ve Finalde Çıkabilecek Soru 47",
+            "link": "https://youtu.be/czqF_TG_72c",
+            "subgroup": ""
+          },
+          {
+            "num": "S48",
+            "title": "Vize ve Finalde Çıkabilecek Soru 48",
+            "link": "https://youtu.be/o1aZLXclNHk",
+            "subgroup": ""
+          },
+          {
+            "num": "S49",
+            "title": "Vize ve Finalde Çıkabilecek Soru 49",
+            "link": "https://youtu.be/y6NhBz0EtnU",
+            "subgroup": ""
+          },
+          {
+            "num": "S50",
+            "title": "Vize ve Finalde Çıkabilecek Soru 50",
+            "link": "https://youtu.be/1m1wMb72l1o",
+            "subgroup": ""
+          },
+          {
+            "num": "S51",
+            "title": "Vize ve Finalde Çıkabilecek Soru 51",
+            "link": "https://youtu.be/3lHaUqwEGm8",
+            "subgroup": ""
+          },
+          {
+            "num": "S52",
+            "title": "Vize ve Finalde Çıkabilecek Soru 52",
+            "link": "https://youtu.be/zjk0Ti6AQeo",
+            "subgroup": ""
+          },
+          {
+            "num": "S53",
+            "title": "Vize ve Finalde Çıkabilecek Soru 53",
+            "link": "https://youtu.be/1RujrXXmDHA",
+            "subgroup": ""
+          },
+          {
+            "num": "S54",
+            "title": "Vize ve Finalde Çıkabilecek Soru 54",
+            "link": "https://youtu.be/Dbb34pWMX0Y",
+            "subgroup": ""
+          },
+          {
+            "num": "S55",
+            "title": "Vize ve Finalde Çıkabilecek Soru 55",
+            "link": "https://youtu.be/N6WVutcU-ss",
+            "subgroup": ""
+          },
+          {
+            "num": "S56",
+            "title": "Vize ve Finalde Çıkabilecek Soru 56",
+            "link": "https://youtu.be/tb5DJpoDrio",
+            "subgroup": ""
+          },
+          {
+            "num": "S57",
+            "title": "Vize ve Finalde Çıkabilecek Soru 57",
+            "link": "https://youtu.be/rOpyXeQtNgA",
+            "subgroup": ""
+          },
+          {
+            "num": "S58",
+            "title": "Vize ve Finalde Çıkabilecek Soru 58",
+            "link": "https://youtu.be/caYU4-pZGZM",
+            "subgroup": ""
+          }
+        ]
+      },
+      {
+        "title": "Vize ve Final Sınav Örnekleri",
+        "sub": "",
+        "href": "vize_ve_final_sinav_ornegi_calculus_2.html",
+        "url": "https://www.buders.com/altsayfa/vize_ve_final_sinav_ornegi_calculus_2.html",
+        "videos": [
+          {
+            "num": "",
+            "title": "▶ Vize Sınavı \n           Vize Sınav Örneği 1 \n           Calculus-2 vize sınavında karşılaşabileceğiniz soru tiplerini kapsayan tam sınav çözümü. \n           \n             Türkçe \n             Çözümlü \n             Calculus-2 \n           \n         \n         \n           \n               \n            Videoyu İzle",
+            "link": "https://youtu.be/d99bY10rmvw",
+            "subgroup": ""
+          },
+          {
+            "num": "",
+            "title": "▶ Final Sınavı \n           Final Sınav Örneği 1 \n           Calculus-2 final sınavı formatında hazırlanmış İngilizce sınav çözümü. Yabancı dil eğitimi alanlar için ideal. \n           \n             İngilizce \n             Çözümlü \n             Calculus-2 \n           \n         \n         \n           \n               \n            Videoyu İzle",
+            "link": "https://youtu.be/Qn1G9E7dq9k",
+            "subgroup": ""
+          }
+        ]
+      },
+      {
+        "title": "Vize ve Final Provaları",
+        "sub": "",
+        "href": "https://buders.com/altsayfa/calculus_2_vize_ve_final_ornekleri.html",
+        "url": "https://buders.com/altsayfa/calculus_2_vize_ve_final_ornekleri.html",
+        "videos": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,82 @@
+/**
+ * Calculus 2 Öğrenim Portalı - Stil Dosyası (css/style.css)
+ * Açık (Light) ve Koyu (Dark) tema değişkenleri ve özel bileşen stilleri.
+ */
+
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --card-hover: #f1f5f9;
+  --border: #e2e8f0;
+  --text: #0f172a;
+  --muted: #64748b;
+  --primary: #4f46e5;
+  --primary-fg: #ffffff;
+}
+
+.dark {
+  --bg: #090d16;
+  --card: #111827;
+  --card-hover: #1f2937;
+  --border: #1f2937;
+  --text: #f9fafb;
+  --muted: #9ca3af;
+  --primary: #6366f1;
+  --primary-fg: #ffffff;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* Özel İnce Kaydırma Çubukları (Scrollbars) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}
+
+/* 16:9 Geniş Ekran Video Kapsayıcısı */
+.aspect-video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.aspect-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Aktif Oynatılan Video Satırı */
+.active-video-item {
+  background-color: var(--card-hover);
+  border-left-color: var(--primary) !important;
+}
+
+/* Sinema Modu (Theater Mode) Düzeni */
+.theater-active #video-col {
+  grid-column: span 12 / span 12 !important;
+}
+
+.theater-active #playlist-col {
+  grid-column: span 12 / span 12 !important;
+  position: static !important;
+  height: 520px !important;
+}
