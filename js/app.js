@@ -968,9 +968,9 @@ window.addEventListener('keydown', (e) => {
   } else if (key === 'r') {
     setSpeed(2.0);
   } else if (key === 't') {
-    handleExtendedSpeed(3.0);
+    handleExtendedSpeed(2.5);
   } else if (key === 'y') {
-    toggleTheaterMode();
+    handleExtendedSpeed(3.0);
   } else if (key === 'f') {
     toggleFullscreen();
   } else if (key === 'n') {
